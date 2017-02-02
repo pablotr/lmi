@@ -1,0 +1,309 @@
+html {
+    font-size: 100%;
+}
+body {
+    background-color: RGB(21, 27, 25);
+    font-family: "Courier New", courier, monospace;
+    color: RGB(200, 200, 200);
+    margin: 0px;
+    font-size: 100%;
+}
+h1 {
+    font-size: 2rem;
+    font-family: inherit;
+    color: RGB(255, 255, 255);
+    font-weight: normal;
+    text-align: left;
+    margin: 0.5em 2em;
+    text-shadow: 2px 2px 2px RGB(10, 10, 10);
+}
+hr {
+    border: 1px inset RGB(240, 240, 240);
+    margin: 6px 0px;
+}
+header {
+    background-color: RGB(51, 57, 55);
+    padding-top: 15px;
+}
+nav ul {
+    text-align: center;
+    font-size: 0px;
+}
+nav li{
+    display: inline-block;
+    margin: 0px 1px 15px;
+    font-size: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: RGB(220, 220, 220);
+    padding: 5px;
+    background-color: RGBA(21, 27, 25, 1);
+    border-radius: 0px 0px 15px 15px;
+}
+nav a:link, nav a:visited {
+    color: RGB(220, 220, 220);
+    background-color: RGBA(21, 27, 25, 1);
+}
+nav a:hover {
+    color: RGB(255, 255,  255);
+    background-color: RGBA(21, 27, 25, 0.50);
+    box-shadow: 0px 2px 5px RGB(20, 20, 20);
+}
+nav a:active {
+    color: RGB(255, 255, 255);
+    background-color: RGBA(21, 27, 25, 0.75);
+}
+section#main_menu {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: RGB(151, 157, 155);
+    padding: 0px 0px 0px 10%;
+    margin: 2em 0em 1em;
+    text-align: left;
+    background-color: RGB(31, 37, 35);
+}
+img#main_image {
+    width: 35%;
+    height: 35%;
+    vertical-align: middle;  
+    padding: 0px;
+    margin: 20px 1.25%;
+}
+#main_menu ul {
+    font-family: inherit;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+section#utilities_menu {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+#utilities_menu li {
+    display: inline-block;
+    margin: 0px 30px;
+    padding: 0px;
+}
+section#entertainment_menu, section#workspace_menu {
+    vertical-align: middle;            	 
+    display: inline-block;
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+}
+#entertainment_menu {
+    text-align: right;
+}
+#workspace_menu {
+    text-align: left;
+}
+#entertainment_menu li, #workspace_menu li {
+    margin: 10px 0px;
+    padding: 0px;
+}
+#main_menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+#main_menu li a:link, p a:link, #main_menu li a:visited, p a:visited {
+    color: inherit; /*body{color: RGB(200, 200, 200)}*/
+}
+#main_menu li a:hover, p a:hover {
+    color: RGB(255, 255,  255);
+    background-color: RGB(50, 50, 50);
+    box-shadow: 5px 5px 5px RGB(20, 20, 20);
+}
+#main_menu li a:active, p a:active {
+    color: RGB(150, 150, 150);
+    box-shadow: 2px 2px 2px RGB(20, 20, 20);
+}
+
+p.quotation {
+    font-size: 0.80rem; 
+    font-family: inherit;
+    color: RGB(150, 150, 150);
+}
+img.icon {
+    vertical-align: middle;
+    max-height: 20px; 
+    max-width: 20px;
+}
+section#hexagon {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: inherit;
+    margin: 0px 10%;
+}
+p a {
+    text-decoration: underline;
+}
+table.leaderboard {
+    font-family: inherit;
+    display: inline-block;
+    vertical-align: middle;
+    border: groove 20px RGB(230, 80, 80);
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 0px;
+    margin: 25px;
+}
+.leaderboard col.player {
+    background-color: RGB(50, 50, 50);
+}
+.leaderboard col.score {
+    background-color: RGB(70, 70, 70);
+}
+.leaderboard thead, .leaderboard tfoot {
+    background-color: RGB(31, 37, 35);
+}
+.leaderboard thead th {
+    font-size: 1.20rem;
+    font-weight: normal;
+    color: RGB(150, 150, 150);
+    padding: 5px;
+    margin: 0px;
+}
+.leaderboard tfoot td{
+    font-size: 0.80rem;
+    color: RGB(150, 150, 150);
+    padding: 3px;
+    margin: 0px;
+}
+.leaderboard tbody td {
+    color: inherit;
+    padding: 5px;
+    margin: 0px;
+}
+div.game {
+    display: inline-block;
+    vertical-align: middle;
+    border: groove 20px RGB(230, 80, 80);
+    background-color: RGB(0, 0, 0);
+    padding: 0px;
+    margin: 50px;
+}
+.game a {
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.75em 0px;
+    margin: 0x;
+}
+.game a:link,  .game a:visited {
+    color: RGB(200, 200, 200);
+    background-color: RGB(0, 0, 0);
+}
+.game a:hover {
+    color: RGB(255, 255, 255);
+    background-color: RGB(35, 35, 35);
+}
+.game a:active {
+    background-color: RGB(25, 25, 25);
+}
+iframe {
+    width: 700px;
+    height: 650px;
+    border: none;
+    display: block;
+}
+footer {
+    padding: 0px;
+    margin: 0px;
+}
+footer a {
+    text-align: center;
+    display: block;
+    font-size: 5rem;
+    text-decoration: none;
+    padding: 0% 5%;
+    margin: 0px;
+}
+footer a:link, footer a:visited {
+    color: inherit;
+    background-color: RGB(23, 29, 27)
+}
+footer a:hover {
+    font-weight: bolder;
+    color: RGB(255, 255, 255);
+    background-color: RGB(25, 32, 30)
+}
+footer a:active {
+    color: RGB(150, 150, 150)
+}
+#hexagon aside {
+    display: inline-block;
+    max-width: 500px;
+    vertical-align: middle;
+}
+#hexagon aside details summary {
+    font-size: 1.25rem;
+    font-family: inherit;
+    color: RGB(150, 150, 150);
+    font-weight: normal;
+    margin: 2em 0px 1em;
+    padding: 0px;
+    text-align: left;
+}
+img#drawing {
+    display: block;
+    margin: 50px auto 50px;
+    width: 33%;
+    border-radius: 500px;
+    border: 15px solid transparent;
+    border-image-source: url(Images/border.png);
+    border-image-width: 30px;
+    border-image-outset: 0px;
+    border-image-repeat: space;
+    border-image-slice: 15; /*try 33.333333%*/
+}
+img#drawing:hover {
+    opacity: 0.75;
+}
+img#drawing:active {
+    opacity: 0.5;
+}
+img#border {
+    width: 9%;
+    display: block;
+    margin: 50px auto 50px;
+}
+section#exercise1 {
+    background-image: url(Images/palm.png);
+    background-position: bottom right;
+    background-repeat: repeat-x;
+    text-align: center;
+}
+div.polaroid {
+    margin: 50px auto 50px;
+    width: 33%;
+    background-color: white;
+    box-shadow: 10px 10px 10px RGBA(0, 0, 0, 0.5);
+    
+}
+img#skull {
+    width: 92%;
+    margin-top: 4%;
+}
+#skull:hover {
+    -webkit-filter: blur(1px) grayscale(70%) brightness(150%);
+}
+.polaroid p {
+    padding: 5%;
+    color: RGB(30,30,30);
+    font-size: 1.20em;
+}
+
+
+
