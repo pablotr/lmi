@@ -1,63 +1,91 @@
 html {
     font-size: 100%;
+    padding: 0px;
 }
 body {
+    padding: 0px;
     background-color: RGB(21, 27, 25);
+    background-color: hsl(160, 13%, 9.5%); /*theme colour*/
     font-family: "Courier New", courier, monospace;
-    color: RGB(200, 200, 200);
-    margin: 0px;
-    font-size: 100%;
+    color: RGB(200, 200, 200); /*por qué razón*/
 }
 h1 {
+    margin: 1rem 4rem;
     font-size: 2rem;
-    font-family: inherit;
-    color: RGB(255, 255, 255);
     font-weight: normal;
+    color: RGB(240, 240, 240);
     text-align: left;
-    margin: 0.5em 2em;
-    text-shadow: 2px 2px 2px RGB(10, 10, 10);
 }
 hr {
-    border: 1px inset RGB(240, 240, 240);
-    margin: 6px 0px;
+    margin: 0px;
+    border: 5pxpx solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/
 }
 header {
-    background-color: RGB(51, 57, 55);
-    padding-top: 15px;
+    padding-top: 1px; /*if not set, blank space between header and top side of the display window. reason: ¿?*/
+    background-color: hsl(160, 13%, 14.5%); /*5% lighter than body*/
+}
+nav {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
 }
 nav ul {
-    text-align: center;
-    font-size: 0px;
+    display: block;
+    font-size: 0px; /*set to avoid a wider separation between li's*/
+    list-style: none;
 }
-nav li{
-    display: inline-block;
-    margin: 0px 1px 15px;
-    font-size: 1rem;
+nav li {
+    display: inline;
 }
 nav a {
+    display: inline-block; /*set so I can give it a margin and a padding*/
+    margin: 0px 5px 15px;
+    padding: 5px;
+    font-size: 1rem;
     text-decoration: none;
     color: RGB(220, 220, 220);
-    padding: 5px;
     background-color: RGBA(21, 27, 25, 1);
     border-radius: 0px 0px 15px 15px;
+    
+    color: rgb(200, 200, 200);
+    background-color: hsl(160, 13%, 7%);
+    box-shadow: 0px 4px 1px RGB(225, 255, 255);
+    
+    width: 10rem; /*ancho fijado por que botoon*/
+    max-width: 40%; /*IMPORTANTE: Buena solución, buscar como implementar en otros elementos*/
 }
 nav a:link, nav a:visited {
-    color: RGB(220, 220, 220);
-    background-color: RGBA(21, 27, 25, 1);
+    /*RELLENAR*/
 }
 nav a:hover {
-    color: RGB(255, 255,  255);
     background-color: RGBA(21, 27, 25, 0.50);
     box-shadow: 0px 2px 5px RGB(20, 20, 20);
+    
+    color: white;
+    text-shadow: 0px 0px 2px RGB(0, 255, 255);
+    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
+    background-color: hsl(160, 13%, 11%);
+    box-shadow: 0px 4px 1px RGB(225, 255, 255);
 }
 nav a:active {
-    color: RGB(255, 255, 255);
     background-color: RGBA(21, 27, 25, 0.75);
+    
+    
+    color: white;
+    text-shadow: 0px 0px 2px RGB(0, 255, 255);
+    text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
+    background-color: hsl(160, 13%, 11%);
+    box-shadow: 0px 1px 1px RGB(225, 255, 255);
+    font-size: 0.95rem;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 section#main_menu {
     text-align: center;
-    padding: 0px;
-    margin: 0px;
 }
 h2 {
     font-size: 1.5rem;
@@ -69,17 +97,32 @@ h2 {
     background-color: RGB(31, 37, 35);
 }
 img#main_image {
-    width: 35%;
-    height: 35%;
+    width: 50rem;
+    max-width: 35%;
     vertical-align: middle;  
     padding: 0px;
     margin: 20px 1.25%;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(240, 255, 255);
+    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255); /*cyan neon effect*/
+/*
+    color: RGB(255, 240, 255);
+    text-shadow: 0px 0px 10px RGB(255, 125, 255); 
+*/
 }
 #main_menu ul {
     font-family: inherit;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+}
+
+#main_menu li {
+    font-size: 1rem;
 }
 section#utilities_menu {
     text-align: center;
