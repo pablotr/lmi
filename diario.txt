@@ -1,0 +1,2 @@
+20170204
+Debería repartir el CSS de YourHomepage en varias hojas. Utilizaría una "main" o "mystyle" para características generales de cada elemento (sin usar ningún id y muy pocas o ningúna clase) y otrá más para cada HTML que remplazarían características de la "main" si fuera necesario.
