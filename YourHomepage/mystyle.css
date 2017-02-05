@@ -102,10 +102,10 @@ section#main_menu {
     text-align: center;
 }
 #main_menu img.main {
-    margin: 20px 1% 40px;
+    margin: 2rem 1% 3rem; 
     padding: 0px;
     width: 35%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
-    vertical-align: middle;  
+    vertical-align: middle; 
 }
 #main_menu ul {
     display: block;
@@ -125,7 +125,7 @@ section#main_menu {
 }
 #main_menu #entertainment_menu, #main_menu #workspace_menu {
     display: inline-block;
-    margin: 0px;
+    margin: 2rem 0rem 3rem; /*same top and bottom margin as img.main, so when the img shrinks, top and bottom margins are still maintained*/
     padding: 0px;
     width: 15rem; /*fixed width to center the three elements (ul img ul)*/
     max-width: 31.5%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
@@ -157,8 +157,9 @@ section#main_menu {
     box-shadow: 5px 5px 5px RGBA(20, 20, 20, 0.75);
 }
 #main_menu li a:active/*, p a:active*/ {
-    color: RGB(255, 255,  255);
-    box-shadow: 2px 2px 3px RGBA(20, 20, 20, 0.75);
+    color: RGB(240, 240, 240);
+    background-color: HSL(160, 13%, 13.5%);
+    box-shadow: 2px 2px 2px RGBA(20, 20, 20, 0.75);
 }
 #utilities_menu a {
     margin: 0px 30px;
@@ -171,7 +172,13 @@ img.icon {
     max-height: 20px; 
     max-width: 20px;
 }
+blockquote {
+    margin: 0px;
+    padding: 0px;
+}
 blockquote p {
+    margin: 0px;
+    padding: 0px;
     font-size: 0.80rem; 
     font-family: inherit;
     color: RGB(150, 150, 150); 
@@ -181,85 +188,154 @@ cite {
     font-style: italic;
 }
 section#hexagon {
-    text-align: center;
-    padding: 0px;
+    display: block; /*QUE HAGO CON ESTO ¿?*/
+    display: inline-block;
+    width: 100%;
     margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    text-align: center;
+    
+    vertical-align: middle;
+    
+    background-color: red;
+}#hexagon aside {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 25%;
 }
-p {
+details summary {
+    margin: 1rem 0rem 1rem;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(240, 255, 255);
+    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255); /*cyan neon effect*/
+    text-align: left;
+    outline: none;
+}
+details p {
+    margin: 5% 10%;
+    padding: 0px;
+    font-size: 1rem;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    color: inherit;
-    margin: 0px 10%;
+    color: RGB(200, 200, 200);
+    text-align: justify;
 }
 p a {
+    color: RGB(200, 100, 100);
+    text-decoration: none;
+}
+p a:link, p a:visited {
+    color: RGB(200, 100, 100);
+    text-decoration: none;
+}
+p a:hover {
+    color: RGB(200, 100, 100);
     text-decoration: underline;
 }
+p a:active {
+    color: RGB(200, 100, 100);
+    text-decoration: underline;
+}
+abbr[title] {
+    text-decoration: none;
+    border-bottom: 1px dashed RGB(200, 200, 200);
+}
+kbd {
+    font-size: 1rem;
+    color: RGB(200, 100, 100);
+}
 table.leaderboard {
-    font-family: inherit;
-    display: inline-block;
-    vertical-align: middle;
-    border: groove 20px RGB(230, 80, 80);
+    margin: 5% 10%;
+    padding: 0px;
+/*    vertical-align: middle;*/
+    border: groove 20px HSL(0, 70%, 60%);
+    border: dashed 1px RGB(255, 255, 255);
     border-collapse: separate;
     border-spacing: 10px;
-    padding: 0px;
-    margin: 25px;
-}
-.leaderboard col.player {
-    background-color: RGB(50, 50, 50);
-}
-.leaderboard col.score {
-    background-color: RGB(70, 70, 70);
 }
 .leaderboard thead, .leaderboard tfoot {
-    background-color: RGB(31, 37, 35);
+    background-color: HSL(160, 13%, 9.5%);
+}
+.leaderboard col.player {
+    background-color: HSL(160, 13%, 7%);
+}
+.leaderboard col.score {
+    background-color: HSL(160, 13%, 14.5%);
 }
 .leaderboard thead th {
-    font-size: 1.20rem;
-    font-weight: normal;
-    color: RGB(150, 150, 150);
-    padding: 5px;
     margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(200, 200, 200); 
 }
 .leaderboard tfoot td{
+    margin: 0px;
+    padding: 0.35rem;
     font-size: 0.80rem;
     color: RGB(150, 150, 150);
-    padding: 3px;
-    margin: 0px;
 }
 .leaderboard tbody td {
-    color: inherit;
-    padding: 5px;
     margin: 0px;
+    padding: 0.35rem;
+    font-size: 1rem;
+    color: RGB(255, 255, 255);
 }
-div.game {
-    display: inline-block;
-    vertical-align: middle;
-    border: groove 20px RGB(230, 80, 80);
-    background-color: RGB(0, 0, 0);
+section.game {
+    margin: 0px;
     padding: 0px;
-    margin: 50px;
+    width: 40%;
+    display: inline-block;
+/*    border: groove 20px HSL(0, 70%, 60%);*/
+    background-color: HSL(160, 13%, 9.5%);
+    background-color: aqua;
 }
 .game a {
-    display: block;
+    display: inline-block;
+    margin: 0px 2.5% 2rem;
+    padding: 1.5rem 0rem;
+    box-sizing: border-box;
+    width: 45%;
+    height: 5rem; /*2rem(font-size)+1.5rem*2(top and bottom padding)*/
     font-size: 2rem;
+    text-align: center;
+    color: RGB(200, 200, 200);
     text-decoration: none;
-    padding: 0.75em 0px;
-    margin: 0x;
+    background-color: HSL(160, 13%, 7%);
+    box-shadow: 0px 0.25rem 0.05rem RGB(225, 255, 255);
 }
 .game a:link,  .game a:visited {
     color: RGB(200, 200, 200);
-    background-color: RGB(0, 0, 0);
+    text-decoration: none;
+    background-color: HSL(160, 13%, 7%);
+    box-shadow: 0px 0.25rem 0.05rem RGB(225, 255, 255); 
 }
 .game a:hover {
     color: RGB(255, 255, 255);
-    background-color: RGB(35, 35, 35);
+    text-decoration: none;
+    background-color: HSL(160, 13%, 11%);
+    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
 }
-.game a:active {
-    background-color: RGB(25, 25, 25);
+.game a:active { 
+    margin: 0.7rem 3% 1.8rem; 
+    /*.game a {margin: 0px 0px 2rem;} --> top and bottom padding shrink 0.25rem each, so we add 0.5rem to top-margin (push bottom effect). Additionally, due to box-shadow (which shrinks ~0.2rem), we have to add 0.2rem to top-margin and substract 0.2rem to bottom-margin to achieve this push effect*/
+    padding: 1.25rem 0rem; 
+    /*.game a {padding: 1.5rem 0rem;}*/
+    width: 44%;
+    height: 4.5rem; /*top and bottom padding shrink 0.25rem each (box-sizing is set to border-box)*/
+    font-size: 1.9rem;
+    color: RGB(255, 255, 255);
+    text-decoration: none;
+    box-shadow: 0px 0.1rem 0.05rem RGB(225, 255, 255); 
+    text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
 }
 iframe {
     width: 700px;
     height: 650px;
-    border: none;
+    border: dashed 1px white;
     display: block;
 }
 footer {
@@ -285,23 +361,6 @@ footer a:hover {
 }
 footer a:active {
     color: RGB(150, 150, 150)
-}
-#hexagon aside {
-    display: inline-block;
-    max-width: 500px;
-    vertical-align: middle;
-}
-#hexagon details {
-    text-align: justify;
-}
-#hexagon aside details summary {
-    font-size: 1.25rem;
-    font-family: inherit;
-    color: RGB(150, 150, 150);
-    font-weight: normal;
-    margin: 2em 0px 1em;
-    padding: 0px;
-    text-align: left;
 }
 img#drawing {
     display: block;

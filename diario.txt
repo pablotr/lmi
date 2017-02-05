@@ -1,2 +1,13 @@
 20170204
-DeberÌa repartir el CSS de YourHomepage en varias hojas. UtilizarÌa una "main" o "mystyle" para caracterÌsticas generales de cada elemento (sin usar ning˙n id y muy pocas o ning˙na clase) y otr· m·s para cada HTML que remplazarÌan caracterÌsticas de la "main" si fuera necesario.
+-Deber√≠a repartir el CSS de YourHomepage en varias hojas. Utilizar√≠a una "main" o "mystyle" para caracter√≠sticas generales de cada elemento (sin usar ning√∫n id y muy pocas o ning√∫na clase) y otr√° m√°s para cada HTML que remplazar√≠an caracter√≠sticas de la "main" si fuera necesario.
+-Deber√≠a a√±adir un margin-top a la main.img y los *_menu laterales. Los botones de los *_menu's no relucen tanto como me gustar√≠a al pulsarlos.
+
+20170205
+-Usar @media queries para el font-size de los *_menu's, la img.main (o directamente hacerla desaparecer), y el iframe. Usar los @media queries con ventanas minimizadas en mente, no mobiles/tablets.
+
+20170205
+-Leer:
+http://christopheraue.net/2014/03/05/vertical-align/
+http://vanseodesign.com/css/vertical-centering/ 
+Cuando termine con eso podr√≠a leer un poco sobre 'overflow'.
+El plan es: terminar de arreglar index.html, arreglar exercises.html, leer sobre los tags/atributos nuevos y @media queries, aplicar lo que he leido y finalmente entregar.
