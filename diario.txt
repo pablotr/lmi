@@ -1,4 +1,4 @@
-20170204
+﻿20170204
 -Debería repartir el CSS de YourHomepage en varias hojas. Utilizaría una "main" o "mystyle" para características generales de cada elemento (sin usar ningún id y muy pocas o ningúna clase) y otrá más para cada HTML que remplazarían características de la "main" si fuera necesario.
 -Debería añadir un margin-top a la main.img y los *_menu laterales. Los botones de los *_menu's no relucen tanto como me gustaría al pulsarlos.
 
@@ -11,3 +11,7 @@ http://christopheraue.net/2014/03/05/vertical-align/
 http://vanseodesign.com/css/vertical-centering/ 
 Cuando termine con eso podría leer un poco sobre 'overflow'.
 El plan es: terminar de arreglar index.html, arreglar exercises.html, leer sobre los tags/atributos nuevos y @media queries, aplicar lo que he leido y finalmente entregar.
+
+20170206
+-Añadir un botón "chill" que inicie un video de youtube en autoplay en un iframe pequeñito. Video: https://www.youtube.com/watch?v=GoTlY3rIFTg (lofi hip hop radio - beats to relax/study to
+). Es util si tienes constantemente la ventana abierta en pinned.
