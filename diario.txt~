@@ -29,12 +29,4 @@ Cosas para hacer:
 - vertical-align: middle en los *_menu's
 - cambiar cita
 Notas: 
-- overflow corta el text-shadow pero no el box-shadow.
-
-20170209
-Cosas para hacer:
-- chill iframe flotando en la esquina derecha abajo
-- @media query para ir de "--> START <--" a "START" (reducir rem también?)
-- footer --> ^:hover glow en vez de bold
-- pxrge
-- cambiar cita 
+- overflow corta el text-shadow pero no el box-shadow. 

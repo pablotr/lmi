@@ -39,7 +39,7 @@ hr {
     border: 5pxpx solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/
 }
 header {
-    padding-top: 1px; /*if not set, blank space between header and top side of the display window. reason: ¿?*/
+    padding-top: 1px; /*if not set, blank space between header and top side of the display window. Reason: ¿?*/
     background-color: HSL(160, 13%, 14.5%); /*5% lighter than body*/
 }
 nav {
@@ -55,40 +55,36 @@ nav ul {
 }
 nav li {
     display: inline;
+    margin: 0px;
+    padding: 0px;
 }
 nav a, nav a:link, nav a:visited {
-    display: inline-block; /*set so I can give it a margin and a padding*/
-    margin: 0px 5px 15px;
+    display: inline-block; 
+    margin: 0px 0.5% 15px;
     padding: 5px 10px 5px;
+    width: 9rem;
+    max-width: 40%;
     font-size: 1rem;
-    color: rgb(200, 200, 200);
+    color: RGB(200, 200, 200);
     text-align: center;
     text-decoration: none;
-    background-color: HSL(160, 13%, 7%);
     border-radius: 0px 0px 15px 15px;
-    box-shadow: 0px 4px 1px RGB(225, 255, 255);
-    width: 9rem; /*fixed width so it doesnt vary when text is smaller*/
-    max-width: 39%; /*set to avoid putting each botton in a different line when the screen is too narrow*/
-    
-    overflow: hidden;
-    vertical-align: middle;
+    overflow: hidden; /*explained later on section#hexagon's buttons*/
+    vertical-align: top;
+    background-color: HSL(160, 13%, 7%);
+    box-shadow: 0px 2px 1px RGB(225, 255, 255);
 }
 nav a:hover {
     color: RGB(255, 255, 255);
-    text-decoration: none;
     background-color: HSL(160, 13%, 11%);
-    box-shadow: 0px 4px 1px RGB(225, 255, 255);
+    box-shadow: 0px 2px 1px RGB(225, 255, 255);
     text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
 }
 nav a:active {
-    margin: 0px 7px 10px; /*nav a {margin: 0px 5px 15px;}*/
-    padding: 5px 8px 10px; /*nav a {padding: 5px 10px 5px;}*/
-    font-size: 0.95rem;
-    color: RGB(255, 255, 255);
-    text-decoration: none;
-    background-color: HSL(160, 13%, 11%);
-    box-shadow: 0px 1px 1px RGB(225, 255, 255);
-    text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
+    margin: 0rem 0.5% 10px; /*nav a {margin: 0% 5% 15px;}*/
+    padding: 10px 10px 5px; /*nav a {padding: 5px 10px 5px;}*/
+    box-shadow: 0px 3px 1px RGB(225, 255, 255);
+    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
 }
 section#main_menu {
     margin: 0px;
@@ -120,8 +116,8 @@ section#main_menu {
     display: inline-block;
     margin: 2rem 0rem 3rem; /*same top and bottom margin as img.main, so when the img shrinks, top and bottom margins are still maintained*/
     padding: 0px;
-    width: 15rem; /*fixed width to center the three elements (ul img ul)*/
-    width: 31.5%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
+    width: 31.5%; /*fixed width to center the three elements (ul img ul)*/
+    /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
     vertical-align: middle;
 }
 #entertainment_menu {
@@ -133,23 +129,21 @@ section#main_menu {
 #entertainment_menu li, #workspace_menu li {
     display: block;
 }
-#main_menu li a {
+#main_menu li a, #main_menu li a:link, #main_menu li a:visited {
     display: inline-block;
     text-decoration: none;
     padding: 5px;
     font-size: 1rem;
     color: RGB(200, 200, 200);
     text-decoration: none;
+    vertical-align: middle;
 }
-#main_menu li a:link, /*p a:link,*/ #main_menu li a:visited/*, p a:visited*/ {
-    color: RGB(200, 200, 200); /*same as #main_menu li a*/
-}
-#main_menu li a:hover/*, p a:hover*/ {
+#main_menu li a:hover {
     color: RGB(255, 255,  255);
     background-color: HSL(160, 13%, 14.5%);
     box-shadow: 5px 5px 5px RGBA(20, 20, 20, 0.75);
 }
-#main_menu li a:active/*, p a:active*/ {
+#main_menu li a:active {
     color: RGB(240, 240, 240);
     background-color: HSL(160, 13%, 13.5%);
     box-shadow: 2px 2px 2px RGBA(20, 20, 20, 0.75);
@@ -163,6 +157,15 @@ section#main_menu {
 img.icon {
     vertical-align: middle;
     height: 20px; 
+}
+#main_menu li span.name {
+    vertical-align: middle;
+}
+#entertainment_menu .name {
+    margin-right: 0.7rem;
+}
+#utilities_menu .name, #workspace_menu .name {
+    margin-left: 0.7rem;
 }
 blockquote {
     margin: 0px;
@@ -186,12 +189,11 @@ section#hexagon {
     text-align: center;
 }
 #hexagon aside {
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    margin-left: 5%;
+    padding: 0%;
     display: inline-block;
     width: 25%;
-    
-    overflow: hidden;
     vertical-align: middle;
 }
 details summary {
@@ -205,24 +207,16 @@ details summary {
     outline: none;
 }
 details p {
-    margin: 5% 10%;
+    margin: 1rem 5%;
     padding: 0px;
     font-size: 1rem;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: RGB(200, 200, 200);
     text-align: justify;
 }
-p a {
+p a, p a:link, p a:visited, p a:hover {
     color: RGB(200, 100, 100);
     text-decoration: none;
-}
-p a:link, p a:visited {
-    color: RGB(200, 100, 100);
-    text-decoration: none;
-}
-p a:hover {
-    color: RGB(200, 100, 100);
-    text-decoration: underline;
 }
 p a:active {
     color: RGB(200, 100, 100);
@@ -237,9 +231,8 @@ kbd {
     color: RGB(200, 100, 100);
 }
 table.leaderboard {
-    margin: 5% 10%;
-    padding: 0px;
-/*    vertical-align: middle;*/
+    margin: 1rem 5%;
+    padding: 0%;
     border: groove 20px HSL(0, 70%, 60%);
     border: dashed 1px RGB(255, 255, 255);
     border-collapse: separate;
@@ -275,15 +268,12 @@ table.leaderboard {
 }
 section.game {
     display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    background-color: HSL(160, 13%, 9.5%);
-    overflow: hidden;
-    vertical-align: middle;
-    
-    
+    margin: 0rem 5%;
+    padding: 0%;
     width: 700px;
-    max-width: 70%;
+    max-width: 55%;
+    background-color: transparent;
+    vertical-align: middle;
 }
 
 .game a, .game a:link, .game a:visited {
@@ -317,11 +307,10 @@ section.game {
     text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
 }
 .game a:active { 
-    margin: 0.4rem 3.4% 1.8rem;
-    padding: 1.4rem 0rem;
+    margin: 0.3rem 3.4% 1.8rem;
+    padding: 1.45rem 0rem;
     width: 43.2%;
     font-size: 1.92rem;
-    color: RGB(255, 255, 255);
     text-decoration: none;
     box-shadow: 0px 0.1rem 0.05rem RGB(225, 255, 255); 
     text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
@@ -335,25 +324,24 @@ section.game {
     Decreasing the bottom-margin and increasing the top margin the same ammount (0.2rem) "moves" the element down. We also shrink the box-shadow ~0.2rem.
     
     SHRINK (4% smaller)
-    We shrink top and bottom padding 0.1rem each, so we add 0.2rem to top-margin so the element's base stands still on its position.
+    We shrink top and bottom padding 0.05rem each, so we add 0.1rem to top-margin so the element's base stands still on its position.
     Width decreases from 45% to 43.2% (-1.8%) so we add 1.8/2=0.9% to left and right margin so the shrinked button doesn't alter the position of the other one.
     Font-size is also decreased: from 2rem to 1.92.
     */
 }
 
 iframe {
-    width: 700px;
+    display: block;
+    margin: 0rem auto; /*auto because width is not 100%*/
+    padding: 0%;
+    width: 99%; /*With width:100% I've seen the right border disapear on my computer, but perhaps it was a bug. It might be innecesary.*/
     height: 650px;
     border: dashed 1px white;
-    display: block;
-    
     overflow: auto;
-    width: 99%; /*borde derecho no se ve en 100% ¿?*/
-    margin: 0px auto;
 }
 footer {
-    padding: 0px;
-    margin: 0px;
+    margin: 3rem 0% 0rem;
+    padding: 0%;
 }
 footer a {
     text-align: center;
