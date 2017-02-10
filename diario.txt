@@ -31,10 +31,10 @@ Cosas para hacer:
 Notas: 
 - overflow corta el text-shadow pero no el box-shadow.
 
-20170209
+20170210
 Cosas para hacer:
 - chill iframe flotando en la esquina derecha abajo
 - @media query para ir de "--> START <--" a "START" (reducir rem también?)
 - footer --> ^:hover glow en vez de bold
-- pxrge
-- cambiar cita 
+- cambiar cita
+- meta¿? author¿?

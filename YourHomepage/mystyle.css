@@ -1,9 +1,11 @@
 html {
+    margin: 0rem;
+    padding: 0rem;
     font-size: 100%;
-    padding: 0px;
 }
 body {
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     background-color: RGB(21, 27, 25);
     background-color: HSL(160, 13%, 9.5%); /*theme colour*/
     font-family: "Courier New", courier, monospace;
@@ -17,8 +19,8 @@ h1 {
     text-align: left;
 }
 h2 {
-    margin: 3rem 0rem 1.5rem;
-    padding: 0px;
+    margin: 3rem 0% 1.5rem;
+    padding: 0rem;
     padding-left: 10%;
     font-size: 1.5rem;
     font-weight: normal;
@@ -27,86 +29,86 @@ h2 {
     background-color: HSL(160, 13%, 7%);
 }
 h3 {
-    margin: 0rem 0rem 1rem;
-    padding: 0px;
+    margin: 0rem 0% 1rem;
+    padding: 0rem;
     font-size: 1.2rem;
     font-weight: normal;
-    color: RGB(240, 255, 255);
-    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255); /*cyan neon effect*/
+    color: RGB(240, 255, 255); 
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255); /*cyan neon effect*/
 }
 hr {
-    margin: 0px;
-    border: 5pxpx solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/
+    margin: 0rem;
+    border: 0.066rem solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/
 }
 header {
     padding-top: 1px; /*if not set, blank space between header and top side of the display window. Reason: ¿?*/
     background-color: HSL(160, 13%, 14.5%); /*5% lighter than body*/
 }
 nav {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     text-align: center; 
 }
 nav ul {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     list-style: none;
 }
 nav li {
     display: inline;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 nav a, nav a:link, nav a:visited {
     display: inline-block; 
-    margin: 0px 0.5% 15px;
-    padding: 5px 10px 5px;
+    margin: 0rem 0.5% 1rem;
+    padding: 0.33rem 0.66rem 0.33rem; 
     width: 9rem;
     max-width: 40%;
     font-size: 1rem;
     color: RGB(200, 200, 200);
     text-align: center;
     text-decoration: none;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0rem 0rem 1rem 1rem; 
     overflow: hidden; /*explained later on section#hexagon's buttons*/
     vertical-align: top;
-    background-color: HSL(160, 13%, 7%);
-    box-shadow: 0px 2px 1px RGB(225, 255, 255);
+    background-color: HSL(160, 13%, 11%);
+    box-shadow: 0rem 0.13rem 0.066rem RGB(225, 255, 255); 
 }
 nav a:hover {
     color: RGB(255, 255, 255);
-    background-color: HSL(160, 13%, 11%);
-    box-shadow: 0px 2px 1px RGB(225, 255, 255);
-    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
+    background-color: HSL(160, 13%, 12%);
+    box-shadow: 0rem 0.13rem 0.066rem RGB(225, 255, 255);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
 }
 nav a:active {
-    margin: 0rem 0.5% 10px; /*nav a {margin: 0% 5% 15px;}*/
-    padding: 10px 10px 5px; /*nav a {padding: 5px 10px 5px;}*/
-    box-shadow: 0px 3px 1px RGB(225, 255, 255);
-    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
+    margin: 0rem 0.5% 0.66rem; /*a:link {margin: 0rem 0.5% 1rem;}*/
+    padding: 0.66rem 0.66rem 0.33rem; /*a:link {padding: 0.33rem 0.66rem 0.33rem;}*/
+    box-shadow: 0rem 0.2rem 0.066rem RGB(225, 255, 255);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
 }
 section#main_menu {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     text-align: center;
 }
 #main_menu img.main {
     margin: 2rem 1% 3rem; 
-    padding: 0px;
-    width: 35%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
+    padding: 0rem;
+    width: 35%; /*35(img.main)+1*2(img.main{left and right margin})+31.5*2(entertainment and workspace _menu{width}) == 100%*/
     vertical-align: middle; 
 }
 #main_menu ul {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     list-style-type: none;
 }
 #main_menu #utilities_menu {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     text-align: center;
 }
 #utilities_menu li {
@@ -114,8 +116,8 @@ section#main_menu {
 }
 #main_menu #entertainment_menu, #main_menu #workspace_menu {
     display: inline-block;
-    margin: 2rem 0rem 3rem; /*same top and bottom margin as img.main, so when the img shrinks, top and bottom margins are still maintained*/
-    padding: 0px;
+    margin: 2rem 0% 3rem; /*same top and bottom margin as img.main, so when the img shrinks, top and bottom margins are still maintained*/
+    padding: 0rem;
     width: 31.5%; /*fixed width to center the three elements (ul img ul)*/
     /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
     vertical-align: middle;
@@ -132,7 +134,7 @@ section#main_menu {
 #main_menu li a, #main_menu li a:link, #main_menu li a:visited {
     display: inline-block;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.33rem;
     font-size: 1rem;
     color: RGB(200, 200, 200);
     text-decoration: none;
@@ -141,22 +143,22 @@ section#main_menu {
 #main_menu li a:hover {
     color: RGB(255, 255,  255);
     background-color: HSL(160, 13%, 14.5%);
-    box-shadow: 5px 5px 5px RGBA(20, 20, 20, 0.75);
+    box-shadow: 0.33rem 0.33rem 0.33rem RGBA(20, 20, 20, 0.75);
 }
 #main_menu li a:active {
     color: RGB(240, 240, 240);
-    background-color: HSL(160, 13%, 13.5%);
-    box-shadow: 2px 2px 2px RGBA(20, 20, 20, 0.75);
+    background-color: HSL(160, 13%, 12%);
+    box-shadow: 0.13rem 0.13rem 0.13rem RGBA(20, 20, 20, 0.75);
 }
 #utilities_menu a {
-    margin: 0px 30px;
+    margin: 0rem 2rem;
 }
 #entertainment_menu a, #workspace_menu a {
-    margin: 10px 0px;
+    margin: 0.66rem 0%;
 }
 img.icon {
     vertical-align: middle;
-    height: 20px; 
+    height: 1.33rem; 
 }
 #main_menu li span.name {
     vertical-align: middle;
@@ -168,12 +170,12 @@ img.icon {
     margin-left: 0.7rem;
 }
 blockquote {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 blockquote p {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     font-size: 0.80rem; 
     font-family: inherit;
     color: RGB(150, 150, 150); 
@@ -184,31 +186,31 @@ cite {
 }
 section#hexagon {
     display: block;
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     text-align: center;
 }
 #hexagon aside {
-    margin: 0%;
+    margin: 0rem;
     margin-left: 5%;
-    padding: 0%;
+    padding: 0rem;
     display: inline-block;
     width: 25%;
     vertical-align: middle;
 }
 details summary {
-    margin: 1rem 0rem 1rem;
-    padding: 0px;
+    margin: 1rem 0% 1rem;
+    padding: 0rem;
     font-size: 1.2rem;
     font-weight: normal;
     color: RGB(240, 255, 255);
-    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255); /*cyan neon effect*/
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255); /*cyan neon effect*/
     text-align: left;
     outline: none;
 }
 details p {
     margin: 1rem 5%;
-    padding: 0px;
+    padding: 0rem;
     font-size: 1rem;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: RGB(200, 200, 200);
@@ -224,7 +226,7 @@ p a:active {
 }
 abbr[title] {
     text-decoration: none;
-    border-bottom: 1px dashed RGB(200, 200, 200);
+    border-bottom: 0.066rem dashed RGB(200, 200, 200);
 }
 kbd {
     font-size: 1rem;
@@ -232,11 +234,10 @@ kbd {
 }
 table.leaderboard {
     margin: 1rem 5%;
-    padding: 0%;
-    border: groove 20px HSL(0, 70%, 60%);
-    border: dashed 1px RGB(255, 255, 255);
+    padding: 0rem;
+    border: dashed 0.066rem RGB(255, 255, 255);
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 0.66rem;
 }
 .leaderboard thead, .leaderboard tfoot {
     background-color: HSL(160, 13%, 9.5%);
@@ -248,20 +249,20 @@ table.leaderboard {
     background-color: HSL(160, 13%, 14.5%);
 }
 .leaderboard thead th {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     font-size: 1.2rem;
     font-weight: normal;
     color: RGB(200, 200, 200); 
 }
 .leaderboard tfoot td{
-    margin: 0px;
+    margin: 0rem;
     padding: 0.35rem;
     font-size: 0.80rem;
     color: RGB(150, 150, 150);
 }
 .leaderboard tbody td {
-    margin: 0px;
+    margin: 0rem;
     padding: 0.35rem;
     font-size: 1rem;
     color: RGB(255, 255, 255);
@@ -269,20 +270,20 @@ table.leaderboard {
 section.game {
     display: inline-block;
     margin: 0rem 5%;
-    padding: 0%;
+    padding: 0rem;
     width: 700px;
     max-width: 55%;
     background-color: transparent;
     vertical-align: middle;
 }
-
 .game a, .game a:link, .game a:visited {
     display: inline-block;
     margin: 0rem 2.5% 2rem;
-    padding: 1.5rem 0rem;
+    padding: 1.5rem 0%;
     width: 45%;
     font-size: 2rem;
     text-align: center;
+    white-space: nowrap; /*just in case*/
     overflow: hidden;
     /*
     If set to hidden, makes posible to 'vertical-align' the element as a whole, including its margins, instead of just the text inside it.
@@ -298,25 +299,25 @@ section.game {
     color: RGB(200, 200, 200);
     text-decoration: none;
     background-color: HSL(160, 13%, 7%);
-    box-shadow: 0px 0.25rem 0.05rem RGB(225, 255, 255);
+    box-shadow: 0rem 0.25rem 0.05rem RGB(225, 255, 255);
 }
 .game a:hover {
     color: RGB(255, 255, 255);
     text-decoration: none;
-    background-color: HSL(160, 13%, 11%);
-    text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
+    background-color: HSL(160, 13%, 12%);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
 }
 .game a:active { 
     margin: 0.3rem 3.4% 1.8rem;
-    padding: 1.45rem 0rem;
+    padding: 1.45rem 0%;
     width: 43.2%;
     font-size: 1.92rem;
     text-decoration: none;
-    box-shadow: 0px 0.1rem 0.05rem RGB(225, 255, 255); 
-    text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
+    box-shadow: 0rem 0.1rem 0.05rem RGB(225, 255, 255); 
+    text-shadow: 0rem 0rem 0.33rem RGB(125, 255, 255), 0rem 0rem 1.33rem RGB(255, 255, 255);
     /*
     a:link {margin: 0rem 2.5% 2rem;}
-    a:link {padding: 1.5rem 0rem;}
+    a:link {padding: 1.5rem 0%;}
     
     To achieve a "push button" effect, we have to move and shrink the element
     
@@ -329,51 +330,60 @@ section.game {
     Font-size is also decreased: from 2rem to 1.92.
     */
 }
-
 iframe {
     display: block;
     margin: 0rem auto; /*auto because width is not 100%*/
-    padding: 0%;
+    padding: 0rem;
     width: 99%; /*With width:100% I've seen the right border disapear on my computer, but perhaps it was a bug. It might be innecesary.*/
     height: 650px;
-    border: dashed 1px white;
+    border: dashed 0.066rem white;
     overflow: auto;
 }
 footer {
     margin: 3rem 0% 0rem;
-    padding: 0%;
+    padding: 0rem;
 }
-footer a {
-    text-align: center;
+footer p#author {
+    margin: 0rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    color: RGB(150, 150, 150);
+    background-color: HSL(160, 13%, 7%);
+    text-align: right;
+}
+footer a.top, footer a.top:link, footer a.top:visited {
     display: block;
+    margin: 0rem;
+    padding: 0rem;
     font-size: 5rem;
+    color: RGB(200, 200, 200);
     text-decoration: none;
-    padding: 0% 5%;
-    margin: 0px;
+    text-align: center;
+    background-color: HSL(160, 13%, 8%);
 }
-footer a:link, footer a:visited {
-    color: inherit;
-    background-color: RGB(23, 29, 27)
+footer a.top:hover {
+    background-color: HSL(160, 13%, 12%);
 }
-footer a:hover {
-    font-weight: bolder;
-    color: RGB(255, 255, 255);
-    background-color: RGB(25, 32, 30)
+footer a.top:active {
+    background-color: HSL(160, 13%, 11%);
 }
-footer a:active {
-    color: RGB(150, 150, 150)
-}
+
+
+
+
+/*NEW CSS SHEET FROM HERE*/
+
 img#drawing {
     display: block;
-    margin: 50px auto 50px;
+    margin: 3.33rem auto 3.33rem;
     width: 33%;
-    border-radius: 500px;
-    border: 15px solid transparent;
+    border-radius: 33.33rem; 
+    border: 1rem solid transparent;
     border-image-source: url(Images/border.png);
-    border-image-width: 30px;
-    border-image-outset: 0px;
+    border-image-width: 2rem; 
+    border-image-outset: 0rem;
     border-image-repeat: space;
-    border-image-slice: 15; /*try 33.333333%*/
+    border-image-slice: 15;
 }
 img#drawing:hover {
     opacity: 0.75;
@@ -384,7 +394,7 @@ img#drawing:active {
 img#border {
     width: 9%;
     display: block;
-    margin: 50px auto 50px;
+    margin: 3.33rem auto 3.33rem; 
 }
 section#exercise1 {
     background-image: url(Images/palm.png);
@@ -393,10 +403,10 @@ section#exercise1 {
     text-align: center;
 }
 div.polaroid {
-    margin: 50px auto 50px;
+    margin: 3.33rem auto 3.33rem;
     width: 33%;
     background-color: white;
-    box-shadow: 10px 10px 10px RGBA(0, 0, 0, 0.5);
+    box-shadow: 0.66rem 0.66rem 0.66rem RGBA(0, 0, 0, 0.5);
     
 }
 img#skull {
@@ -404,12 +414,12 @@ img#skull {
     margin-top: 4%;
 }
 #skull:hover {
-    -webkit-filter: blur(1px) grayscale(70%) brightness(150%);
+    -webkit-filter: blur(0.066rem) grayscale(70%) brightness(150%);
 }
 .polaroid p {
     padding: 5%;
     color: RGB(30,30,30);
-    font-size: 1.20em;
+    font-size: 1.20rem;
 }
 
 
