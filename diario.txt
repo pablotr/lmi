@@ -15,3 +15,18 @@ El plan es: terminar de arreglar index.html, arreglar exercises.html, leer sobre
 20170206
 -Añadir un botón "chill" que inicie un video de youtube en autoplay en un iframe pequeñito. Video: https://www.youtube.com/watch?v=GoTlY3rIFTg (lofi hip hop radio - beats to relax/study to
 ). Es util si tienes constantemente la ventana abierta en pinned.
+
+20170209
+Cosas para hacer:
+- cambiar bacco's que tengan el mismo color que el body por "transparent"
+- chill iframe flotando en la esquina derecha abajo
+- @media query para ir de "--> START <--" a "START" (reducir rem también?)
+- footer --> ^:hover glow en vez de bold
+- añadir Test a .gitignore
+- a:link
+- pxrge
+- comprobar 96%, aplicar en nav, cambiar comment a nav
+- vertical-align: middle en los *_menu's
+- cambiar cita
+Notas: 
+- overflow corta el text-shadow pero no el box-shadow. 

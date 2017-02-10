@@ -51,13 +51,12 @@ nav ul {
     display: block;
     margin: 0px;
     padding: 0px;
-    font-size: 0px; /*set to avoid a wider separation between li's*/
     list-style: none;
 }
 nav li {
     display: inline;
 }
-nav a {
+nav a, nav a:link, nav a:visited {
     display: inline-block; /*set so I can give it a margin and a padding*/
     margin: 0px 5px 15px;
     padding: 5px 10px 5px;
@@ -70,13 +69,9 @@ nav a {
     box-shadow: 0px 4px 1px RGB(225, 255, 255);
     width: 9rem; /*fixed width so it doesnt vary when text is smaller*/
     max-width: 39%; /*set to avoid putting each botton in a different line when the screen is too narrow*/
-}
-nav a:link, nav a:visited {
-    /*same as 'nav a'*/
-    color: RGB(200, 200, 200);
-    text-decoration: none;
-    background-color: HSL(160, 13%, 7%);
-    box-shadow: 0px 4px 1px RGB(225, 255, 255);
+    
+    overflow: hidden;
+    vertical-align: middle;
 }
 nav a:hover {
     color: RGB(255, 255, 255);
@@ -98,7 +93,6 @@ nav a:active {
 section#main_menu {
     margin: 0px;
     padding: 0px;
-    font-size: 0px;
     text-align: center;
 }
 #main_menu img.main {
@@ -111,7 +105,6 @@ section#main_menu {
     display: block;
     margin: 0px;
     padding: 0px;
-    font-size: 0px; /*set to avoid a wider separation between li's*/
     list-style-type: none;
 }
 #main_menu #utilities_menu {
@@ -128,7 +121,7 @@ section#main_menu {
     margin: 2rem 0rem 3rem; /*same top and bottom margin as img.main, so when the img shrinks, top and bottom margins are still maintained*/
     padding: 0px;
     width: 15rem; /*fixed width to center the three elements (ul img ul)*/
-    max-width: 31.5%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
+    width: 31.5%; /*35(img.main)+2(img.main{margin})+31.5*2(entertainment && workspace _menu) == 100%*/
     vertical-align: middle;
 }
 #entertainment_menu {
@@ -169,8 +162,7 @@ section#main_menu {
 }
 img.icon {
     vertical-align: middle;
-    max-height: 20px; 
-    max-width: 20px;
+    height: 20px; 
 }
 blockquote {
     margin: 0px;
@@ -188,22 +180,19 @@ cite {
     font-style: italic;
 }
 section#hexagon {
-    display: block; /*QUE HAGO CON ESTO ¿?*/
-    display: inline-block;
-    width: 100%;
+    display: block;
     margin: 0px;
     padding: 0px;
-    font-size: 0px;
     text-align: center;
-    
-    vertical-align: middle;
-    
-    background-color: red;
-}#hexagon aside {
+}
+#hexagon aside {
     margin: 0px;
     padding: 0px;
     display: inline-block;
     width: 25%;
+    
+    overflow: hidden;
+    vertical-align: middle;
 }
 details summary {
     margin: 1rem 0rem 1rem;
@@ -285,33 +274,41 @@ table.leaderboard {
     color: RGB(255, 255, 255);
 }
 section.game {
+    display: inline-block;
     margin: 0px;
     padding: 0px;
-    width: 40%;
-    display: inline-block;
-/*    border: groove 20px HSL(0, 70%, 60%);*/
     background-color: HSL(160, 13%, 9.5%);
-    background-color: aqua;
+    overflow: hidden;
+    vertical-align: middle;
+    
+    
+    width: 700px;
+    max-width: 70%;
 }
-.game a {
+
+.game a, .game a:link, .game a:visited {
     display: inline-block;
-    margin: 0px 2.5% 2rem;
+    margin: 0rem 2.5% 2rem;
     padding: 1.5rem 0rem;
-    box-sizing: border-box;
     width: 45%;
-    height: 5rem; /*2rem(font-size)+1.5rem*2(top and bottom padding)*/
     font-size: 2rem;
     text-align: center;
+    overflow: hidden;
+    /*
+    If set to hidden, makes posible to 'vertical-align' the element as a whole, including its margins, instead of just the text inside it.
+    
+    This is necessary to achieve a "push button" effect. If set to visible, when we "push down" one of the elements, changing its top and bottom margin, we also move other element. This happens because the aligmnment it's set to be relative to the text inside the elements: if the text of one buttons moves, the other button will also move to remain aligned.
+    
+    But if we set it to "hidden", the alignment will be relative to the element as a whole, including margins, so moving the text of one won't affect the position of the other.
+    */ 
+    vertical-align: middle;
+    /*
+    Set to middle so the baseline moves up. Below baseline there is some space to shelter the descenders of a text, so if it is on the bottom (for example, using vertical-align: baseline), it adds extra space between lines.
+    */
     color: RGB(200, 200, 200);
     text-decoration: none;
     background-color: HSL(160, 13%, 7%);
     box-shadow: 0px 0.25rem 0.05rem RGB(225, 255, 255);
-}
-.game a:link,  .game a:visited {
-    color: RGB(200, 200, 200);
-    text-decoration: none;
-    background-color: HSL(160, 13%, 7%);
-    box-shadow: 0px 0.25rem 0.05rem RGB(225, 255, 255); 
 }
 .game a:hover {
     color: RGB(255, 255, 255);
@@ -320,23 +317,39 @@ section.game {
     text-shadow: 0px 0px 10px RGB(125, 255, 255), 0px 0px 40px RGB(255, 255, 255);
 }
 .game a:active { 
-    margin: 0.7rem 3% 1.8rem; 
-    /*.game a {margin: 0px 0px 2rem;} --> top and bottom padding shrink 0.25rem each, so we add 0.5rem to top-margin (push bottom effect). Additionally, due to box-shadow (which shrinks ~0.2rem), we have to add 0.2rem to top-margin and substract 0.2rem to bottom-margin to achieve this push effect*/
-    padding: 1.25rem 0rem; 
-    /*.game a {padding: 1.5rem 0rem;}*/
-    width: 44%;
-    height: 4.5rem; /*top and bottom padding shrink 0.25rem each (box-sizing is set to border-box)*/
-    font-size: 1.9rem;
+    margin: 0.4rem 3.4% 1.8rem;
+    padding: 1.4rem 0rem;
+    width: 43.2%;
+    font-size: 1.92rem;
     color: RGB(255, 255, 255);
     text-decoration: none;
     box-shadow: 0px 0.1rem 0.05rem RGB(225, 255, 255); 
     text-shadow: 0px 0px 5px RGB(125, 255, 255), 0px 0px 20px RGB(255, 255, 255);
+    /*
+    a:link {margin: 0rem 2.5% 2rem;}
+    a:link {padding: 1.5rem 0rem;}
+    
+    To achieve a "push button" effect, we have to move and shrink the element
+    
+    MOVE:
+    Decreasing the bottom-margin and increasing the top margin the same ammount (0.2rem) "moves" the element down. We also shrink the box-shadow ~0.2rem.
+    
+    SHRINK (4% smaller)
+    We shrink top and bottom padding 0.1rem each, so we add 0.2rem to top-margin so the element's base stands still on its position.
+    Width decreases from 45% to 43.2% (-1.8%) so we add 1.8/2=0.9% to left and right margin so the shrinked button doesn't alter the position of the other one.
+    Font-size is also decreased: from 2rem to 1.92.
+    */
 }
+
 iframe {
     width: 700px;
     height: 650px;
     border: dashed 1px white;
     display: block;
+    
+    overflow: auto;
+    width: 99%; /*borde derecho no se ve en 100% ¿?*/
+    margin: 0px auto;
 }
 footer {
     padding: 0px;

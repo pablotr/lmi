@@ -1,60 +1,14 @@
-.parent1 {
-    background-color: red;
-    width: 100%;
-    height: 50%;
-
+img {
+    box-shadow: 5px 5px 5px red;
 }
 
-.parent2 {
-    background-color: yellow;
-    width: 100%;
-    height: 500px;
-    
+span {
+    text-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px yellow;
 }
-p{
-    font-size: 16px;
+
+img, span {
     display: inline-block;
-    
-    vertical-align: top;
+    overflow: hidden;
+    margin: 20px;
 }
-
-.child1 {
-    display: inline-block;
-    margin: 200px 0px;
-    padding: 0px;
-    background-color: greenyellow;
-    
-    width: 10%;
-    height: 100px;
-}
-
-.child2 {
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    background-color: aquamarine;
-    
-    width: 10%;
-    height: 25%;
-    
-    vertical-align: bottom;
-}
-
-.child3 {
-    display: inline-block;
-    margin: 0px;
-    padding: 0px;
-    background-color: gray;
-    
-    width: 10%;
-    height: 90%;
-    
-    vertical-align: bottom;
-}
-
-h1, h2, h3 {
-    margin: 0px;
-    padding 0px;
-}
-
-
