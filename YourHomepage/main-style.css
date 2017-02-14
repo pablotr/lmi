@@ -1,0 +1,263 @@
+html {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 100%;
+}
+body {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: RGB(21, 27, 25);
+    background-color: HSL(160, 13%, 9.5%); /*theme colour*/
+    font-family: "Courier New", courier, monospace;
+    color: RGB(200, 200, 200);
+}
+header {
+    padding-top: 1px; /*if not set, blank space between header and top side of the display window. Reason: ¿?*/
+    background-color: HSL(160, 13%, 14.5%); /*5% lighter than body*/
+}
+h1 {
+    margin: 1rem 3.5%; 
+    font-size: 2rem;
+    font-weight: normal;
+    color: RGB(240, 240, 240);
+    text-align: left;
+}
+header hr {
+    margin: 0rem;
+    border: 0.066rem solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/
+}
+
+/*-----nav-----*/
+nav {
+    margin: 0rem 0rem 3rem;
+    padding: 0rem;
+    text-align: center; 
+}
+nav ul {
+    display: block;
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+}
+nav li {
+    display: inline;
+    margin: 0rem;
+    padding: 0rem;
+}
+nav a, nav a:link, nav a:visited {
+    display: inline-block; 
+    margin: 0rem 0.5% 1rem;
+    padding: 0.33rem 0.66rem 0.33rem; 
+    width: 9rem;
+    max-width: 40%;
+    font-size: 1rem;
+    color: RGB(200, 200, 200);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0rem 0rem 1rem 1rem; 
+    overflow: hidden; /*explained later on section#hexagon's buttons*/
+    vertical-align: top;
+    background-color: HSL(160, 13%, 11%);
+    box-shadow: 0rem 0.13rem 0.066rem RGB(225, 255, 255); 
+}
+nav a:hover {
+    color: RGB(255, 255, 255);
+    background-color: HSL(160, 13%, 12%);
+    box-shadow: 0rem 0.13rem 0.066rem RGB(225, 255, 255);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
+}
+nav a:active {
+    margin: 0rem 0.5% 0.66rem; /*a:link {margin: 0rem 0.5% 1rem;}*/
+    padding: 0.66rem 0.66rem 0.33rem; /*a:link {padding: 0.33rem 0.66rem 0.33rem;}*/
+    box-shadow: 0rem 0.2rem 0.066rem RGB(225, 255, 255);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
+}
+/*-----nav-----*/
+
+article.standard {
+    display: block;
+    margin: 0rem;
+    padding: 0rem 0rem 3rem;
+}
+article.standard div.line {
+    display: block;
+    margin: 0rem;
+    padding: 0rem 5% 0rem;
+    text-align: center;
+}
+h2 {
+    margin: 0rem 0% 1.5rem;
+    padding: 0rem;
+    padding-left: 10%;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: RGB(200, 200, 200);
+    text-align: left;
+    background-color: HSL(160, 13%, 7%);
+}
+h3 {
+    margin: 0rem 0% 1rem;
+    padding: 0rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(240, 255, 255); 
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255); /*cyan neon effect*/
+}
+p {
+    margin: 1rem 0rem 1rem;
+    padding: 0rem;
+    font-size: 1rem;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: RGB(200, 200, 200);
+    text-align: justify;
+}
+a, a:link, a:visited, a:hover {
+    color: RGB(200, 100, 100);
+    text-decoration: none;
+}
+a:active {
+    color: RGB(200, 100, 100);
+    text-decoration: underline;
+}
+abbr[title] {
+    text-decoration: none;
+    border-bottom: 0.066rem dashed RGB(200, 200, 200);
+}
+kbd {
+    color: RGB(100, 100, 100);
+}
+blockquote {
+    margin: 0rem;
+    padding: 0rem;
+}
+blockquote p {
+    font-family: "Courier New", courier, monospace;
+    font-size: 0.80rem; 
+    color: RGB(150, 150, 150); 
+    text-align: center;
+}
+cite { 
+    font-style: italic;
+}
+details {
+    margin: 0px;
+    padding: 0px;
+}
+details summary {
+    margin: 0rem;
+    padding: 1rem 0% 1rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(240, 255, 255);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255); /*cyan neon effect*/
+    text-align: left;
+    outline: none;
+}
+details summary~* {
+    margin: 1rem 5%;
+    padding: 0rem;
+}
+
+/*-----div#Music_Box-----*/
+div#Music_Box {
+    position: fixed;
+    bottom: 1rem;
+    left: 2%;
+}
+#Music_Box iframe {
+    display: inline-block;
+    margin: 0rem;
+    margin-left: 2rem;
+    padding: 0rem;
+    width: 240px;
+    height: 135px;
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+}
+div.music_menu {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    vertical-align: middle;
+}
+span.music_title {
+    display: block;
+    margin: 0rem 0% 0.5rem;
+    padding: 0rem;
+    font-size: 1rem;
+    text-align: center;
+    color: RGB(200, 200, 200);
+}
+a.music_button, a.music_button:link, a.music_button:visited {
+    display: block;
+    margin: 0rem auto;
+    padding: 0.25rem;
+    width: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap; /*just in case*/
+    color: RGB(200, 200, 200);
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px dashed RGB(200, 200, 200);
+}
+a.music_on {
+    border-top-left-radius: 1.75rem; 
+    border-top-right-radius: 1.75rem; 
+}
+a.music_off {
+    border-bottom-left-radius: 1.75rem; 
+    border-bottom-right-radius: 1.75rem; 
+}
+a.music_button:hover {
+    color: RGB(255, 255, 255);
+    text-decoration: none;
+    border: 1px dashed RGB(255, 255, 255);
+}
+a.music_button:active {
+    margin: 0.1rem auto 0rem;
+    padding: 0.15rem;
+}
+a.music_on:active {
+    margin: 0.6rem auto 0.1rem; /*why 0.6: music_on and music_title are both block elements, so its margins collapse (music_title bottom margin: 0.5rem)*/
+    border-top-left-radius: 1.5rem; 
+    border-top-right-radius: 1.5rem; 
+}
+a.music_off:active {
+    margin: 0.1rem auto 0.1rem;
+    border-bottom-left-radius: 1.5rem; 
+    border-bottom-right-radius: 1.5rem; 
+}
+/*-----div#Music_Box-----*/
+
+/*-----footer-----*/
+footer {
+    margin: 0rem;
+    padding: 0rem;
+}
+footer a.top, footer a.top:link, footer a.top:visited {
+    display: block;
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 5rem;
+    color: RGB(200, 200, 200);
+    text-decoration: none;
+    text-align: center;
+    background-color: HSL(160, 13%, 8%);
+}
+footer a.top:hover {
+    background-color: HSL(160, 13%, 11%);
+}
+footer a.top:active {
+    background-color: HSL(160, 13%, 12%);
+}
+footer p#author {
+    margin: 0rem;
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    color: RGB(150, 150, 150);
+    background-color: HSL(160, 13%, 4.5%);
+    text-align: right;
+}
+/*-----footer-----*/

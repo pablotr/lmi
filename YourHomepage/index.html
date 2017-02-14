@@ -2,8 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Custom startpage; the page you first see when you open your browser">
+        <meta name="author" content="pablotr"> 
         <link rel="stylesheet" type="text/css" href="normalize.css">
-        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <link rel="stylesheet" type="text/css" href="main-style.css">
+        <link rel="stylesheet" type="text/css" href="index-style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - YourHomepage</title>
     </head>
     <body>
@@ -17,183 +21,203 @@
                 </ul>
             </nav>
         </header>
-        <section id="main_menu">
-            <h2>Main Menu</h2>
-            <section id="utilities_menu">
-                <h3>Utilities</h3>
-                <ul>
-                    <li>
-                        <a href="https://mail.google.com/mail/?tab=wm" rel="external" target="_self">
-                            <img alt="gmail" class="icon" src="images/icons/gmail.png"><span class="name">Gmail</span>
-                        </a>
-                    </li><!--
-                    --><li>
-                        <a href="https://google.com" rel="external" target="_self">
-                            <img alt="google" class="icon" src="images/icons/google.png"><span class="name">Google</span>
-                    </a>
-                    </li><!--
-                    --><li>
-                        <a href="https://translate.google.es/?hl=en&tab=wT" rel="external" target="_self">
-                            <img alt="traductor" class="icon" src="images/icons/traductor.png"><span class="name">Traductor</span>
-                    </a>
-                    </li><!--
-                    --><li>
-                        <a href="https://en.wikipedia.org/wiki/Main_Page" rel="external" target="_self">
-                            <img alt="wikipedia" class="icon" src="images/icons/wikipedia.png"><span class="name">Wikipedia</span>
-                    </a>
-                    </li>
-                </ul>
-            </section>
-            <section id="entertainment_menu">
-                <h3>Entertainment</h3>
-                <ul dir="rtl">
-                    <li>
-                        <a href="https://www.4chan.org/" rel="external" target="_self">
-                            <img alt="4chan" class="icon" src="images/icons/4chan.png"><span class="name">4Chan</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#hexagon_game">
-                            <img alt="hexagon" class="icon" src="images/icons/hexagon.png"><span class="name">Hexagon</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://kickasstorrents.to/" rel="external" target="_self">
-                            <img alt="kickasstorrents" class="icon" src="images/icons/kickasstorrents.png"><span class="name">Kickass Torrents</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://play.spotify.com/" rel="external" target="_self">
-                            <img alt="spotify" class="icon" src="images/icons/spotify.png"><span class="name">Spotify</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://web.whatsapp.com/" rel="external" target="_self">
-                            <img alt="whasapp" class="icon" src="images/icons/whatsapp.png"><span class="name">Whatsapp Desktop</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/" rel="external" target="_self">
-                            <img alt="youtube" class="icon" src="images/icons/youtube.png"><span class="name">Youtube</span>
-                        </a>
-                    </li>
-                </ul>
-            </section><!--
-            --><img src="images/street.jpg" title="street" alt="street" class="main"><!--
-            --><section id="workspace_menu">
-                <h3>Workspace</h3>                
-                <ul>
-                    <li>
-                        <a href="https://github.com/" rel="external" target="_self">
-                            <img alt="github" class="icon" src="images/icons/github.png"><span class="name">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://classroom.google.com" rel="external" target="_self">
-                            <img alt="classroom" class="icon" src="images/icons/classroom.png"><span class="name">Google Classroom</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/" rel="external" target="_self">
-                            <img alt="drive" class="icon" src="images/icons/drive.png"><span class="name">Google Drive</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://docs.oracle.com/javase/8/docs/api/" rel="external" target="_self">
-                            <img alt="java" class="icon" src="images/icons/java.png"><span class="name">Java API</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://iesserpis.edu.gva.es/moodle/course/index.php?categoryid=9" rel="external" target="_self">
-                            <img alt="serpis" class="icon" src="images/icons/serpis.png"><span class="name">Moodle Serpis</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.w3schools.com/" rel="external" target="_self">
-                            <img alt="w3schools" class="icon" src="images/icons/w3schools.png"><span class="name">W3Schools</span>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <blockquote lang="es" cite="https://www.youtube.com/watch?v=0MimccYkHoc"><p>"No tienes ni puta idea de cuál es el camino del Tao, hijo de la gran puta", <cite>Mira, te comento...</cite> - Ignatius Farray</p></blockquote>
-        </section>
-        <section id="hexagon">
+        <main>
+            <article class="standard" id="MainMenu">
+                <h2>Main Menu</h2>
+                <div class="line one">
+                    <section id="Menu_Utilities">
+                        <h3>Utilities</h3>
+                        <ul>
+                            <li>
+                                <a href="https://mail.google.com/mail/?tab=wm" rel="external" target="_self">
+                                    <img class="icon" alt="gmail_icon" src="images/icons/gmail.png"><span class="site">Gmail</span>
+                                </a>
+                            </li><!--
+                            --><li>
+                                <a href="https://google.com" rel="external" target="_self">
+                                    <img class="icon" alt="google_icon" src="images/icons/google.png"><span class="site">Google</span>
+                            </a>
+                            </li><!--
+                            --><li>
+                                <a href="https://translate.google.es/?hl=en&tab=wT" rel="external" target="_self">
+                                    <img class="icon" alt="traductor_icon" src="images/icons/traductor.png"><span class="site">Traductor</span>
+                            </a>
+                            </li><!--
+                            --><li>
+                                <a href="https://en.wikipedia.org/wiki/Main_Page" rel="external" target="_self">
+                                    <img class="icon" alt="wikipedia_icon" src="images/icons/wikipedia.png"><span class="site">Wikipedia</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="line two">
+                    <section id="Menu_Entertainment">
+                        <h3>Entertainment</h3>
+                        <ul dir="rtl">
+                            <li>
+                                <a href="https://www.4chan.org/" rel="external" target="_self">
+                                    <img class="icon" alt="4chan_icon" src="images/icons/4chan.png"><span class="site">4Chan</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#hexagon_game">
+                                    <img class="icon" alt="hexagon_icon" src="images/icons/hexagon.png"><span class="site">Hexagon</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://kickasstorrents.to/" rel="external" target="_self">
+                                    <img class="icon" alt="kickasstorrents_icon" src="images/icons/kickasstorrents.png"><span class="site">Kickass Torrents</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://play.spotify.com/" rel="external" target="_self">
+                                    <img class="icon" alt="spotify_icon" src="images/icons/spotify.png"><span class="site">Spotify</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://web.whatsapp.com/" rel="external" target="_self">
+                                    <img class="icon" alt="whatsapp_icon" src="images/icons/whatsapp.png"><span class="site">Whatsapp Desktop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" rel="external" target="_self">
+                                    <img class="icon" alt="youtube_icon" src="images/icons/youtube.png"><span class="site">Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section><!--
+                    --><img id="MiddlePicture" title="Photo by Masashi Wakui" alt="" src="images/shinkoiwa.jpg"><!--
+                    --><section id="Menu_Workspace">
+                        <h3>Workspace</h3>                
+                        <ul>
+                            <li>
+                                <a href="https://github.com/" rel="external" target="_self">
+                                    <img class="icon" alt="github_icon" src="images/icons/github.png"><span class="site">GitHub</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://classroom.google.com" rel="external" target="_self">
+                                    <img class="icon" alt="classroom_icon" src="images/icons/classroom.png"><span class="site">Google Classroom</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/" rel="external" target="_self">
+                                    <img class="icon" alt="drive_icon" src="images/icons/drive.png"><span class="site">Google Drive</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://docs.oracle.com/javase/8/docs/api/" rel="external" target="_self">
+                                    <img class="icon" alt="java_icon" src="images/icons/java.png"><span class="site">Java API</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://iesserpis.edu.gva.es/moodle/course/index.php?categoryid=9" rel="external" target="_self">
+                                    <img class="icon" alt="serpis_icon" src="images/icons/serpis.png"><span class="site">Moodle Serpis</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.w3schools.com/" rel="external" target="_self">
+                                    <img class="icon" alt="w3schools_icon" src="images/icons/w3schools.png"><span class="site">W3Schools</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="line three">
+                    <blockquote lang="es" cite="https://www.youtube.com/watch?v=8sTQjhMDHm8"><p>"Voy a ser mejor persona, esta vez quizás van en serio. De promesas anda lleno el cementerio." <cite><a href="https://www.youtube.com/embed/8sTQjhMDHm8?autoplay=1;rel=0&amp;controls=0&amp;showinfo=0" target="music">Dar alcance</a></cite> - <a href="https://bastante.bandcamp.com/" target="_blank">Bastante</a></p></blockquote>
+                </div>   
+            </article>
+        </main>
+        <article class="standard" id="Hexagon">
             <h2>Hexagon</h2>
-            <aside>
-                <details>
-                    <summary>Description</summary>
-                    <p><cite>Hexagon</cite> is a frenetic action game where you control a small triangle that orbits the hexagon in the middle of the screen. Various shapes and line segments fall toward the hexagon, and it's your job to <strong>avoid them in order to continue</strong>. It was developed in 2012 by the Irish video game designer Terry Cavanagh <em>in the short span of one morning</em> for the <abbr title="Game Developers Conference">GDC</abbr> Pirate Kart V, a two-day event in which hundreds of programmers around the world attempt and create as many games as humanly in 48 hours. The whole experience is set to a phenomenal chiptune track courtesy of <a href="http://chipzel.co.uk/" rel="external" target="_blank">Chipzel</a>.</p>
-                </details>
-                <details>
-                    <summary>Controls</summary>
-                    <p>
-                        Use the left and right <kbd>arrow keys</kbd> to rotate. Press the <kbd>space bar</kbd> to <del>start</del> <ins>start again</ins>.
-                        <br>
-                        If you really have to, press <kbd>m</kbd> to mute the music.
-                    </p>
-                </details>
-                <details>
-                    <summary>Leaderboard</summary>
-                    <table class="leaderboard">
-                        <colgroup>
-                            <col class="player">
-                            <col class="score">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th>Player</th><th>Score</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <td colspan="2">*The players and corresponding scores listed here are ficticious</td>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>PRO</td><td>256:02</td>
-                            </tr>
-                            <tr>
-                                <td>AAA</td><td>201:21</td>
-                            </tr>
-                            <tr>
-                                <td>XIN</td><td>175:32</td>
-                            </tr>
-                            <tr>
-                                <td>ASP</td><td>114:13</td>
-                            </tr>
-                            <tr>
-                                <td>VAN</td><td>90:02</td>
-                            </tr>
-                            <tr>
-                                <td>ANN</td><td>79:59</td>
-                            </tr>
-                            <tr>
-                                <td>JOE</td><td>45:57</td>
-                            </tr>
-                            <tr>
-                                <td>BBB</td><td>19:03</td>
-                            </tr>
-                            <tr>
-                                <td>FUK</td><td>3:29</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-            </aside><!--Using a comment here, I remove any white-space in the mark-up that could later display a gap between the elements
-            --><section class="game" id="hexagon_game">
-                <a class="start" target="hexagon" href="http://terrycavanaghgames.com/hexagon/">
-                    --&gt; START &lt;-- 
-                </a><!--
-                --><a class="off" target="hexagon" href="about:blank">
-                    --&gt; OFF &lt;--
-                </a>
-                <iframe name="hexagon"></iframe>
-            </section>
-        </section>
+            <div class="line one">
+                <aside id="Info">
+                    <details>
+                        <summary>Description</summary>
+                        <p><cite>Hexagon</cite> is a frenetic action game where you control a small triangle that orbits the hexagon in the middle of the screen. Various shapes and line segments fall toward the hexagon, and it's your job to <strong>avoid them in order to continue</strong>. It was developed in 2012 by the Irish video game designer Terry Cavanagh <em>in the short span of one morning</em> for the <abbr title="Game Developers Conference">GDC</abbr> Pirate Kart V, a two-day event in which hundreds of programmers around the world attempt and create as many games as humanly in 48 hours. The whole experience is set to a phenomenal chiptune track courtesy of <a href="http://chipzel.co.uk/" rel="external" target="_blank">Chipzel</a>.</p>
+                    </details>
+                    <details>
+                        <summary>Controls</summary>
+                        <p>
+                            Use the left and right <kbd>arrow keys</kbd> to rotate. Press the <kbd>space bar</kbd> to <del>start</del> <ins>start again</ins>.
+                            <br>
+                            If you really have to, press <kbd>m</kbd> to mute the music.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Leaderboard</summary>
+                        <table id="Leaderboard">
+                            <colgroup>
+                                <col id="PlayerCol">
+                                <col id="ScoreCol">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th id="Player">Player</th><th id="Score">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers="Player">PRO</td><td headers="Score">256:02</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">AAA</td><td headers="Score">201:21</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">XIN</td><td headers="Score">175:32</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">ASP</td><td headers="Score">114:13</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">VAN</td><td headers="Score">90:02</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">ANN</td><td headers="Score">79:59</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">JOE</td><td headers="Score">45:57</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">BBB</td><td headers="Score">19:03</td>
+                                </tr>
+                                <tr>
+                                    <td headers="Player">FUK</td><td headers="Score">3:29</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">*The players and corresponding scores listed here are ficticious</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </details>
+                </aside><!--Using a comment here, I remove any white-space in the mark-up that could later display a gap between the elements
+                --><div id="Game_Box">
+                    <a class="game_button" target="game" href="http://terrycavanaghgames.com/hexagon/">
+                        --&gt; START &lt;-- 
+                    </a><!--
+                    --><a class="game_button" target="game" href="about:blank">
+                        --&gt; OFF &lt;--
+                    </a>
+                    <iframe name="game"></iframe>
+                </div>
+            </div>
+        </article>
+        <div id="Music_Box">
+            <div class="music_menu">
+                <span class="music_title">chill?</span>
+                <a target="music" class="music_button music_on" href="https://www.youtube.com/embed/GoTlY3rIFTg?autoplay=1;rel=0&amp;controls=0&amp;showinfo=0">yes</a>
+                <a target="music" class="music_button music_off" href="about:blank">no</a>
+            </div>
+            <iframe name="music"></iframe>
+        </div>
         <footer>
             <a class="top" title="Back to Top" href="#top">^</a>
             <p id="author">author --> <a target="_blank" href="https://github.com/pablotr/">pablotr</a></p>
         </footer>
     </body>
 </html>
+
+

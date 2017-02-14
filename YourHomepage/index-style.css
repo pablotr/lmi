@@ -1,0 +1,214 @@
+/*-----article#MainMenu-----*/
+/*-----article#MainMenu-----General---*/
+#MainMenu .line.two {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#MainMenu .line.three {
+    margin-bottom: -1rem; /*contains a 'p' block (margin-bottom: 1px;)*/
+}
+#MainMenu ul {
+    display: block;
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+}
+#MainMenu li a, #MainMenu li a:link, #MainMenu li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.33rem;
+    font-size: 1rem;
+    color: RGB(200, 200, 200);
+    text-decoration: none;
+    vertical-align: middle;
+}
+#MainMenu li a:hover {
+    color: RGB(255, 255,  255);
+    background-color: HSL(160, 13%, 14.5%);
+    box-shadow: 0.33rem 0.33rem 0.33rem RGBA(20, 20, 20, 0.75);
+}
+#MainMenu li a:active {
+    color: RGB(240, 240, 240);
+    background-color: HSL(160, 13%, 12%);
+    box-shadow: 0.13rem 0.13rem 0.13rem RGBA(20, 20, 20, 0.75);
+}
+#MainMenu li a img.icon {
+    vertical-align: middle;
+    height: 1.33rem; 
+}
+#MainMenu li a span.site {
+    vertical-align: middle;
+}
+
+/*-----article#MainMenu-----section#Menu_Utilities---*/
+#Menu_Utilities {
+    display: block;
+    margin: 0rem;
+    padding: 0rem;
+    text-align: center;
+}
+#Menu_Utilities li {
+    display: inline;
+}
+#Menu_Utilities a {
+    margin: 0rem 2rem;
+}
+#Menu_Utilities span.site {
+    margin-left: 0.7rem;
+}
+
+/*-----article#MainMenu-----section#Menu_Entertainment and section#Menu_Workspace---*/
+#Menu_Entertainment, #Menu_Workspace {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    width: 31.5%; /*fixed width to center the three elements (ul img ul)*/
+    /*35(img#MiddlePicture)+1*2(img#MiddlePicture {left/right-margin})+31.5*2(#Menu_Entertainment and #Menu_Workspace) == 100%*/
+    vertical-align: middle;
+}
+#Menu_Entertainment li, #Menu_Entertainment li {
+    display: block;
+}
+#Menu_Entertainment a, #Menu_Workspace a {
+    margin: 0.66rem 0%;
+}
+#Menu_Entertainment {
+    text-align: right;
+}
+#Menu_Entertainment span.site {
+    margin-right: 0.7rem;
+}
+#Menu_Workspace {
+    text-align: left;
+}
+#Menu_Workspace span.site {
+    margin-left: 0.7rem;
+}
+
+/*-----article#MainMenu-----img#MiddlePicture---*/
+img#MiddlePicture {
+    margin: 0rem 1% 0rem; 
+    padding: 0rem;
+    width: 35%; /*35(img.main)+1*2(img.main{left and right margin})+31.5*2(entertainment and workspace _menu{width}) == 100%*/
+    vertical-align: middle; 
+}
+
+/*-----article#Hexagon-----*/
+/*-----article#Hexagon-----aside#Info---*/
+aside#Info {
+    margin: 0rem;
+    padding: 0rem;
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+}
+table#Leaderboard {
+    margin: 1rem 5%;
+    padding: 0rem;
+    border: dashed 0.066rem RGB(255, 255, 255);
+    border-collapse: separate;
+    border-spacing: 0.66rem;
+}
+#Leaderboard thead, #Leaderboard tfoot {
+    background-color: HSL(160, 13%, 9.5%);
+}
+#Leaderboard col#PlayerCol {
+    background-color: HSL(160, 13%, 7%);
+}
+#Leaderboard col#ScoreCol {
+    background-color: HSL(160, 13%, 14.5%);
+}
+#Leaderboard thead th {
+    margin: 0rem;
+    padding: 0rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: RGB(200, 200, 200); 
+}
+#Leaderboard tfoot td{
+    margin: 0rem;
+    padding: 0.35rem;
+    font-size: 0.80rem;
+    color: RGB(150, 150, 150);
+}
+#Leaderboard tbody td {
+    margin: 0rem;
+    padding: 0.35rem;
+    font-size: 1rem;
+    color: RGB(255, 255, 255);
+}
+
+/*-----article#Hexagon-----div#Game_Box---*/
+div#Game_Box {
+    display: inline-block;
+    margin: 0rem;
+    margin-left: 5%;
+    padding: 0rem;
+    width: 700px;
+    max-width: 55%;
+    background-color: transparent;
+    vertical-align: middle;
+}
+a.game_button, a.game_button:link, a.game_button:visited {
+    display: inline-block;
+    margin: 0rem 2.5% 2rem;
+    padding: 1.5rem 0%;
+    width: 45%;
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap; /*just in case*/
+    overflow: hidden;
+    /*
+    If set to hidden, makes posible to 'vertical-align' the element as a whole, including its margins, instead of just the text inside it.
+    
+    This is necessary to achieve a "push button" effect. If set to visible, when we "push down" one of the elements, changing its top and bottom margin, we also move other element. This happens because the aligmnment it's set to be relative to the text inside the elements: if the text of one buttons moves, the other button will also move to remain aligned.
+    
+    But if we set it to "hidden", the alignment will be relative to the element as a whole, including margins, so moving the text of one won't affect the position of the other.
+    */ 
+    vertical-align: middle;
+    /*
+    Set to middle so the baseline moves up. Below baseline there is some space to shelter the descenders of a text, so if it is on the bottom (for example, using vertical-align: baseline), it adds extra space between lines.
+    */
+    color: RGB(200, 200, 200);
+    text-decoration: none;
+    background-color: HSL(160, 13%, 7%);
+    box-shadow: 0rem 0.25rem 0.05rem RGB(225, 255, 255);
+}
+a.game_button:hover {
+    color: RGB(255, 255, 255);
+    text-decoration: none;
+    background-color: HSL(160, 13%, 12%);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
+}
+a.game_button:active { 
+    margin: 0.3rem 3.4% 1.8rem;
+    padding: 1.45rem 0%;
+    width: 43.2%;
+    font-size: 1.92rem;
+    text-decoration: none;
+    box-shadow: 0rem 0.1rem 0.05rem RGB(225, 255, 255); 
+    text-shadow: 0rem 0rem 0.33rem RGB(125, 255, 255), 0rem 0rem 1.33rem RGB(255, 255, 255);
+    /*
+    a:link {margin: 0rem 2.5% 2rem;}
+    a:link {padding: 1.5rem 0%;}
+    
+    To achieve a "push button" effect, we have to move and shrink the element
+    
+    MOVE:
+    Decreasing the bottom-margin and increasing the top margin the same ammount (0.2rem) "moves" the element down. We also shrink the box-shadow ~0.2rem.
+    
+    SHRINK (4% smaller)
+    We shrink top and bottom padding 0.05rem each, so we add 0.1rem to top-margin so the element's base stands still on its position.
+    Width decreases from 45% to 43.2% (-1.8%) so we add 1.8/2=0.9% to left and right margin so the shrinked button doesn't alter the position of the other one.
+    Font-size is also decreased: from 2rem to 1.92.
+    */
+}
+#Game_Box iframe {
+    display: block;
+    margin: 0rem auto; /*auto because width is not 100%*/
+    padding: 0rem;
+    width: 99%; /*With width:100% I've seen the right border disapear on my computer, but perhaps it was a bug. It might be innecesary.*/
+    height: 650px;
+    border: dashed 0.066rem white;
+    overflow: auto;
+}

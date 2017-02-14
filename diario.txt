@@ -1,4 +1,4 @@
-﻿20170204
+20170204
 -Debería repartir el CSS de YourHomepage en varias hojas. Utilizaría una "main" o "mystyle" para características generales de cada elemento (sin usar ningún id y muy pocas o ningúna clase) y otrá más para cada HTML que remplazarían características de la "main" si fuera necesario.
 -Debería añadir un margin-top a la main.img y los *_menu laterales. Los botones de los *_menu's no relucen tanto como me gustaría al pulsarlos.
 
@@ -33,8 +33,27 @@ Notas:
 
 20170210
 Cosas para hacer:
-- chill iframe flotando en la esquina derecha abajo
+- chill iframe flotando en la esquina izquierda abajo (press to c&nbsp;h&nbsp;i&nbsp;l&nbsp;l)
 - @media query para ir de "--> START <--" a "START" (reducir rem también?)
-- footer --> ^:hover glow en vez de bold
 - cambiar cita
 - meta¿? author¿?
+- 4.5% en footer // a.top 8% -> 11% -> 12%
+
+20170212
+Cosas para hacer:
+- Arreglar Exercises.html
+- Dividir hojas de estilo
+- Aplicar nuevas tags/atributos
+- @media query para ir de "--> START <--" a "START" (reducir rem también?)
+
+20170213
+- @media query para ir de "--> START <--" a "START" (reducir rem también?)
+    - font-size h3
+    - font-size li
+    - MiddlePicture size/dissapear
+    - Game_Box
+    - Music_Box¿?
+- No me he dado de cuenta de que hemos "dado" imagenes animadas.
+- Cols se parecen a mi diseño, ¿aplicar?
+- usar landscape¿?
+- hacer las paces con float?

@@ -1,0 +1,64 @@
+/*-----article#BorderImage-----*/
+img.border, img.picture {
+    display: inline-block;
+    margin: 0rem;
+    vertical-align: middle;
+}
+img.border {
+    width: 10rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+}
+img.border:hover {
+    opacity: 0.75;
+}
+img.border:active {
+    opacity: 0.5;
+}
+img.picture {
+    margin-left: 2.5rem;
+    width: 25rem;
+    border-radius: 50%; 
+    border: 5rem solid transparent;
+    border-image-source: url(Images/borderimage.png);
+    border-image-width: 1rem; 
+    border-image-repeat: repeat;
+    border-image-slice: 150 fill; /*img width/height --> 900px*/
+}
+
+/*-----article#Polaroid-----*/
+article#Polaroid {
+    background: url(images/palm.png) repeat-x right bottom, HSL(160, 13%, 14.5%);
+}
+span.arrow {
+    margin: 0rem 5rem 0rem;
+    font-size: 2rem;
+    color: RGB(200, 200, 200);
+    text-shadow: 0rem 0rem 0.66rem RGB(125, 255, 255), 0rem 0rem 2.66rem RGB(255, 255, 255);
+}
+img.original, figure.polaroid {
+    display: inline-block;
+    margin: 0rem;
+    width: 25%;
+    vertical-align: middle;
+}
+.polaroid {
+    padding: 1rem 1rem 0rem;
+    background-color: RGB(250, 250, 250);
+    box-shadow: -1rem 1rem 4rem RGBA(0, 0, 0, 0.8);
+}
+.polaroid img {
+    margin: 0rem;
+    width: 100%;
+    -webkit-filter: blur(1px) brightness(150%);
+    filter: brightness(150%) blur(1px);
+}
+.polaroid figcaption {
+    margin: 1rem;
+    padding: 0rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: RGB(55, 55, 55);
+}
