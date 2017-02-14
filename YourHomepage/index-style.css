@@ -86,11 +86,16 @@
 }
 
 /*-----article#MainMenu-----img#MiddlePicture---*/
-img#MiddlePicture {
+picture {
+    display: inline-block;
     margin: 0rem 1% 0rem; 
     padding: 0rem;
     width: 35%; /*35(img.main)+1*2(img.main{left and right margin})+31.5*2(entertainment and workspace _menu{width}) == 100%*/
     vertical-align: middle; 
+}
+img#MiddlePicture {
+    width: 100%;
+    vertical-align: middle;
 }
 
 /*-----article#Hexagon-----*/
@@ -142,10 +147,9 @@ table#Leaderboard {
 div#Game_Box {
     display: inline-block;
     margin: 0rem;
-    margin-left: 5%;
     padding: 0rem;
     width: 700px;
-    max-width: 55%;
+    max-width: 65%;
     background-color: transparent;
     vertical-align: middle;
 }
@@ -211,4 +215,72 @@ a.game_button:active {
     height: 650px;
     border: dashed 0.066rem white;
     overflow: auto;
+}
+
+/*-----@media queries-----*/
+@media only screen and (max-width: 1280px) {
+    a.game_button, a.game_button:link, a.game_button:visited {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 960px) {
+    aside#Info {
+        display: block;
+        width: 90%;
+        margin: 0rem 0rem 2rem;
+    }
+    div#Game_Box {
+        display: block;
+        margin: 0rem auto 0rem;
+        max-width: 90%;
+    }
+    #MainMenu li a, #MainMenu li a:link, #MainMenu li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.33rem;
+    font-size: 0.95rem;
+    color: RGB(200, 200, 200);
+    text-decoration: none;
+    vertical-align: middle;
+    }
+    picture {
+        vertical-align: bottom;
+        float: bottom;
+    }
+    #Menu_Entertainment, #Menu_Workspace {
+        vertical-align: top;
+    }
+    #Menu_Entertainment {
+    text-align: left;
+    }
+    #Menu_Workspace {
+    text-align: right;
+    }
+}
+@media only screen and (max-width: 640px) {
+    a.game_button, a.game_button:link, a.game_button:visited {
+        display: block;
+        width: 100%;
+        font-size: 2em;
+    }
+    #Menu_Entertainment, #Menu_Workspace {
+        display: block;
+        width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+        text-align: center;
+    }
+    #Menu_Utilities li, #Menu_Entertainment li, #Menu_Workspace li {
+        display: block;
+    }
+    #Menu_Entertainment a, #Menu_Workspace a {
+        margin: 0rem 2rem;
+    }
+    #Menu_Entertainment span.site, #Menu_Workspace span.site {
+        margin-left: 0.7rem;
+    }
+    picture {
+        width: 100%;
+        margin: 2rem 0rem 2rem;
+    }
 }

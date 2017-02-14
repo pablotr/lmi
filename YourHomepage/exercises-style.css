@@ -1,12 +1,11 @@
 /*-----article#BorderImage-----*/
 img.border, img.picture {
     display: inline-block;
-    margin: 0rem;
+    margin: 0rem 5rem 0rem;
     vertical-align: middle;
 }
 img.border {
     width: 10rem;
-    margin-right: 2.5rem;
     margin-bottom: 2rem;
 }
 img.border:hover {
@@ -16,8 +15,8 @@ img.border:active {
     opacity: 0.5;
 }
 img.picture {
-    margin-left: 2.5rem;
-    width: 25rem;
+
+    width: 20rem;
     border-radius: 50%; 
     border: 5rem solid transparent;
     border-image-source: url(Images/borderimage.png);
@@ -61,4 +60,27 @@ img.original, figure.polaroid {
     text-align: center;
     letter-spacing: 0.2rem;
     color: RGB(55, 55, 55);
+}
+
+@media only screen and (max-width: 1280px) {
+    /*just in case*/
+}
+@media only screen and (max-width: 960px) {
+    .polaroid figcaption {
+        font-size: 1rem;
+        margin: 0.75rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    img.picture {
+    width: 10rem;
+    }
+    .polaroid figcaption {
+        font-size: 0.5rem;
+        margin: 0.5rem;
+    }
+    span.arrow {
+        font-size: 0rem;
+        margin: 0rem 10% 0rem;
+    }
 }
