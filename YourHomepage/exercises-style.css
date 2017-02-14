@@ -19,7 +19,7 @@ img.picture {
     width: 20rem;
     border-radius: 50%; 
     border: 5rem solid transparent;
-    border-image-source: url(Images/borderimage.png);
+    border-image-source: url(images/borderimage.png);
     border-image-width: 1rem; 
     border-image-repeat: repeat;
     border-image-slice: 150 fill; /*img width/height --> 900px*/
@@ -61,19 +61,28 @@ img.original, figure.polaroid {
     letter-spacing: 0.2rem;
     color: RGB(55, 55, 55);
 }
-
+/*-----@media Queries-----1280px---*/
 @media only screen and (max-width: 1280px) {
-    /*just in case*/
+    /*stuff*/
 }
+
+/*-----@media Queries-----960px---*/
 @media only screen and (max-width: 960px) {
+    
+    /*-----article#Polaroid-----*/
     .polaroid figcaption {
         font-size: 1rem;
         margin: 0.75rem;
     }
 }
+
+/*-----@media Queries-----640px---*/
 @media only screen and (max-width: 640px) {
+    
+    /*-----article#BorderImage-----*/
     img.picture {
-    width: 10rem;
+        width: 10rem;
+        margin: 0rem;
     }
     .polaroid figcaption {
         font-size: 0.5rem;

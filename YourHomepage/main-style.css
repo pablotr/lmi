@@ -262,18 +262,25 @@ footer p#author {
 }
 /*-----footer-----*/
 
-/*-----@media queries-----*/
+/*-----@media Queries-----1280px---*/
 @media only screen and (max-width: 1280px) {
-    /*just in case*/
+    /*stuff*/
 }
+
+/*-----@media Queries-----960px---*/
 @media only screen and (max-width: 960px) {
+    
+    /*-----article#Hexagon-----div#Music_Box---*/
     div#Music_Box iframe {
         position: fixed;
         right: 2%;
         bottom: 1rem;
     }
 }
+/*-----@media Queries-----640px---*/
 @media only screen and (max-width: 640px) {
+    
+    /*-----article#Hexagon-----div#Music_Box---*/
     div#Music_Box iframe {
         position: fixed;
         left: -240px;
