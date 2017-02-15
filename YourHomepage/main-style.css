@@ -22,6 +22,9 @@ h1 {
     color: RGB(240, 240, 240);
     text-align: left;
 }
+span.subtitle {
+    font-size: 1.2rem;
+}
 header hr {
     margin: 0rem;
     border: 0.066rem solid RGB(240, 240, 240); /*white is too bright; h1/hr consonance*/

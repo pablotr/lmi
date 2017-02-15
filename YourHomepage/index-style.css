@@ -108,7 +108,6 @@ aside#Info {
     vertical-align: middle;
 }
 table#Leaderboard {
-    margin: 1rem 5%;
     padding: 0rem;
     border: dashed 0.066rem RGB(255, 255, 255);
     border-collapse: separate;
@@ -223,10 +222,10 @@ a.game_button:active {
     
     /*-----article#Hexagon-----div#Game_Box---*/
     a.game_button, a.game_button:link, a.game_button:visited {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     a.game_button:active {
-        font-size: 1.44rem;
+        font-size: 1.73rem;
     }
 }
 
@@ -305,13 +304,11 @@ a.game_button:active {
         margin: 0rem 0% 2rem;
         padding: 1.5rem 0%;
         width: 100%;
-        font-size: 2em;
     }
     a.game_button:active { 
         margin: 0.3rem 2% 1.85rem;
         padding: 1.45rem 0%;
         width: 96%;
-        font-size: 1.92rem;
         text-decoration: none;
         box-shadow: 0rem 0.1rem 0.05rem RGB(225, 255, 255); 
         text-shadow: 0rem 0rem 0.33rem RGB(125, 255, 255), 0rem 0rem 1.33rem RGB(255, 255, 255);  
