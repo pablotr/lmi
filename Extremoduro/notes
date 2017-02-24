@@ -1,0 +1,37 @@
+Proyecto web: Extremoduro
+
+
+-@MEDIA QUERIES: 
+- standard (mobile/small window) 
+- min-width:640px (tablet/small monitor) 
+- min-width:960px (pc)
+
+
+-SITE PAGES:
+
+-index.html
+	- bio: who is extremoduro
+	- history (option1: not too extense / option2: main part of index)
+	- components of the band (links to solitary projects)
+	- aside(?): links to official webpage, twitter, facebook, etc
+	- one or two cites
+	
+-discography.html
+	- studio albums/live albums/recopilatory albums/solitary projects
+	- desplegable lyrics
+	- iframe to play actual songs/albums
+	- table with (tabular) info (year, music studio, total minutes, etc.)
+	- frontal album art only (click on more to go to gallery) (?), use <figure>
+
+-gallery.html
+	- live concerts pics
+	- band pics
+	- logos
+	- album art
+	- bookmarks to go to each category (links on top and on a fixed menu / links on top and fixed 'back to top' fixed link)
+	- mobile: 2 pics per line
+	- use <picture>
+
+
+USEFUL LINKS:
+- http://getbootstrap.com/css/
