@@ -1,19 +1,58 @@
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+html {
+    font-size: 100%;
+}
+body {
+    background-color: RGB(25, 25, 25);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+img#Header {
+    display: inline-block;
+    margin: 0rem auto;
+    padding: 2rem 10%;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    vertical-align: middle;
+}
+ul {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: text-top;
+}
+li {
+    display: inline-block;
+    width: 100%;
+}
+a, a:link, a:visited {
+    display: block;
+    margin: 0.25rem 2.5%;
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: RGB(255, 255, 255);
+    text-decoration: none;
+    background-color: RGB(50, 50, 50);
+}
+a:hover {
+    color: RGB(20, 20, 20);
+    background-color: RGB(255, 255, 255);
+}
+a:active {
+    color: RGB(20, 20, 20);
+    margin: 0.45rem 3%;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
 
-
-@media only screen and (max-width:640px) {
-    [class*="col-"] {
-        width: 100%;
+@media only screen and (min-width: 640px) {
+    img#Header {
+        width: 65%;
+    }
+    ul {
+        width: 35%;
     }
 }
