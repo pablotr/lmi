@@ -8,14 +8,26 @@ body {
 img#Header {
     display: inline-block;
     margin: 0rem auto;
-    padding: 2rem 10%;
+    padding: 2rem 10% 0rem;
     width: 100%;
     box-sizing: border-box;
     -webkit-filter: invert(100%);
     filter: invert(100%);
     vertical-align: middle;
 }
-ul {
+h1 {
+    margin: 0rem 0rem 2rem;
+    padding: 0rem;
+    color: RGB(255, 255, 255);
+    font-weight: lighter;
+    text-align: center;
+}
+nav {
+    margin: 0rem;
+    padding: 0rem;
+    width: 100%;
+}
+nav ul {
     display: inline-block;
     margin: 0rem;
     padding: 0rem;
@@ -24,11 +36,11 @@ ul {
     text-align: center;
     vertical-align: text-top;
 }
-li {
+nav li {
     display: inline-block;
     width: 100%;
 }
-a, a:link, a:visited {
+nav a, nav a:link, nav a:visited {
     display: block;
     margin: 0.25rem 2.5%;
     padding: 1rem;
@@ -37,22 +49,44 @@ a, a:link, a:visited {
     text-decoration: none;
     background-color: RGB(50, 50, 50);
 }
-a:hover {
+nav a:hover {
     color: RGB(20, 20, 20);
     background-color: RGB(255, 255, 255);
 }
-a:active {
-    color: RGB(20, 20, 20);
-    margin: 0.45rem 3%;
-    padding: 0.8rem;
-    font-size: 1rem;
+nav a:active {
+    /*decrease size to 92% (8%)*/
+    margin: 0.38rem 6.5%; /*0.25 + (0.8 padding + 0.10/2 fontsize) = 0.38 // 2.5% + 4% = 6.5%*/
+    padding: 0.92rem;
+    font-size: 1.15rem;
 }
-
-@media only screen and (min-width: 640px) {
-    img#Header {
-        width: 65%;
-    }
-    ul {
-        width: 35%;
-    }
+section.standard {
+    display: inline-block;
+    margin: 2rem 0rem;
+    padding: 0rem;
+    width: 100%;
+}
+section.standard h2 {
+    margin: 0rem 5% 0rem;
+    padding: 0.25rem;
+    width: 90%;
+    box-sizing: border-box;
+    color: RGB(50, 50, 50);
+    text-align: left;
+    background-color: RGB(255, 255, 255);
+}
+section.standard p {
+    margin: 0rem 5% 0rem;
+    padding: 1rem;
+    width: 90%;
+    box-sizing: border-box;
+    color: RGB(255, 255, 255);
+    background-color: RGB(50, 50, 50);
+}
+img.group {
+    display: inline-block;
+    width: 100%;
+    margin: 0rem;
+    padding: 0rem 2.5% 0rem;
+    box-sizing: border-box;
+    -webkit-filter: grayscale(100%);
 }
