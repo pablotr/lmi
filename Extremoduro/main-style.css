@@ -1,3 +1,4 @@
+body, div, header, nav, footer, aside, section, article, h1, h2, h3, h4, h5, h6 {margin: 0rem; padding: 0rem}
 html {
     font-size: 100%;
 }
@@ -5,36 +6,38 @@ body {
     background-color: RGB(25, 25, 25);
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
-img#Header {
+header {
     display: inline-block;
-    margin: 0rem auto;
-    padding: 2rem 10% 0rem;
+    text-align: center;
+    width: 100%;
+}
+div#Title_Box {
+    display: inline-block;
+    padding: 2rem 10%;
     width: 100%;
     box-sizing: border-box;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    vertical-align: middle;
-}
-h1 {
-    margin: 0rem 0rem 2rem;
-    padding: 0rem;
-    color: RGB(255, 255, 255);
-    font-weight: lighter;
     text-align: center;
 }
+img#Title {
+    width: 100%;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+h1 {
+    font-size: 2rem;
+    color: RGB(255, 255, 255);
+    font-weight: lighter;
+}
 nav {
-    margin: 0rem;
-    padding: 0rem;
+    display: inline-block;
     width: 100%;
 }
 nav ul {
-    display: inline-block;
+    display: block;
     margin: 0rem;
     padding: 0rem;
     width: 100%;
-    box-sizing: border-box;
     text-align: center;
-    vertical-align: text-top;
 }
 nav li {
     display: inline-block;
@@ -46,6 +49,7 @@ nav a, nav a:link, nav a:visited {
     padding: 1rem;
     font-size: 1.25rem;
     color: RGB(255, 255, 255);
+    text-align: center;
     text-decoration: none;
     background-color: RGB(50, 50, 50);
 }
@@ -54,32 +58,32 @@ nav a:hover {
     background-color: RGB(255, 255, 255);
 }
 nav a:active {
-    /*decrease size to 92% (8%)*/
-    margin: 0.38rem 6.5%; /*0.25 + (0.8 padding + 0.10/2 fontsize) = 0.38 // 2.5% + 4% = 6.5%*/
+    /*decrease size an 8% (from 100% to 92%)*/
+    margin: 0.38rem 6.5%; /*0.25 + (0.8 padding + 0.10/2 fontsize) = 0.38 // 2.5% + (8% / 2) = 6.5%*/
     padding: 0.92rem;
     font-size: 1.15rem;
 }
 section.standard {
     display: inline-block;
-    margin: 2rem 0rem;
-    padding: 0rem;
+    padding: 2rem 5%;
     width: 100%;
+    box-sizing: border-box;
 }
 section.standard h2 {
-    margin: 0rem 5% 0rem;
     padding: 0.25rem;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     color: RGB(50, 50, 50);
-    text-align: left;
+    text-align: center;
     background-color: RGB(255, 255, 255);
 }
 section.standard p {
-    margin: 0rem 5% 0rem;
+    margin: 0rem;
     padding: 1rem;
-    width: 90%;
+    width: 100%;
     box-sizing: border-box;
     color: RGB(255, 255, 255);
+    text-align: justify;
     background-color: RGB(50, 50, 50);
 }
 img.group {
