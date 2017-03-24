@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks>
+  <bookmark>
+    <name>Tutorials point</name>
+    <description>Computing tutorials</description>
+    <url>https://www.tutorialspoint.com/</url>
+  </bookmark>
+  <bookmark>
+    <name>Wikipedia</name>
+    <description>A free encyclopedia</description>
+    <url>http://www.wikipedia.org/</url>
+  </bookmark>
+  <bookmark>
+    <name>W3C</name>
+    <description>World Wide Web Consortium</description>
+    <url>http://www.w3.org</url>
+  </bookmark>
+  <bookmark>
+    <name>W3Schools</name>
+    <description>Tutorials for learning web technologies online</description>
+    <url>https://www.w3schools.com</url>
+  </bookmark>
+  <bookmark>
+    <name>YouTube</name>
+    <description>Online video broadcast service</description>
+    <url>https://www.youtube.com</url>
+  </bookmark>
+  <bookmark>
+    <name>Twitter</name>
+    <description>Online news and social networking service</description>
+    <url>https://twitter.com</url>
+  </bookmark>
+</bookmarks>

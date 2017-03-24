@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cities>
+  <city>
+    <name>Nueva Dehli</name>
+    <country continent="Asia">India</country>
+  </city>
+  <city>
+    <name>Lisbon</name>
+    <country continent="Europe">Portugal</country>
+  </city>
+  <city>
+    <name>Cairo</name>
+    <country continent="Africa">Egypt</country>
+  </city>
+  <city>
+    <name>Moscow</name>
+    <country continent="Asia">Rusia</country>
+  </city>
+  <city>
+    <name>Sydney</name>
+    <country continent="Oceania">Australia</country>
+  </city>
+  <city>
+    <name>Bogotá</name>
+    <country continent="America">Colombia</country>
+  </city>
+</cities>

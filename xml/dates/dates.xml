@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<dates>
+  <date>
+    <day>12</day>
+    <month>January</month>
+  </date>
+    <date>
+    <day>7</day>
+    <month>April</month>
+  </date>
+    <date>
+    <day>25</day>
+    <month>October</month>
+  </date>
+    <date>
+    <day>2</day>
+    <month>November</month>
+  </date>
+    <date>
+    <day>30</day>
+    <month>November</month>
+  </date>
+    <date>
+    <day>5</day>
+    <month>December</month>
+  </date>
+</dates>

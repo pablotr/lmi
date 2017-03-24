@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<combinations>
+  <combination result="orange">
+    <color>red</color>
+    <color>yellow</color>
+  </combination>
+  <combination result="grey">
+    <color>black</color>
+    <color>white</color>
+  </combination>
+  <combination result="light green">
+    <color>yellow</color>
+    <color>blue</color>
+    <color>white</color>
+  </combination>
+  <combination result="pink">
+    <color>red</color>
+    <color>white</color>
+  </combination>
+  <combination result="green">
+    <color>yellow</color>
+    <color>blue</color>
+  </combination>
+  <combination result="brown">
+    <color>purple</color>
+    <color>orange</color>
+  </combination>
+</combinations>

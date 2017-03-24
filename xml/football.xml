@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<teams>
+  <team>
+    <name>Athletic</name>
+    <city>Bilbao</city>
+    <training></training>
+    <footballers>
+      <footballer position="defense">
+        <name>Asier</name>
+        <nationality>Basque</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Patxi</name>
+        <nationality>Basque</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Ahmadou</name>
+        <nationality>Cameroonian</nationality>
+      </footballer>
+      <footballer position="forwards">
+        <name>Carlos</name>
+        <nationality>Spanish</nationality>
+      </footballer>
+    </footballers>
+  </team>
+  <team>
+    <name>Granada F.C</name>
+    <city>Granada</city>
+    <training></training>
+    <footballers>
+      <footballer position="defense">
+        <name>Pepe</name>
+        <nationality>Spanish</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Francisco</name>
+        <nationality>Spanish</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Steven</name>
+        <nationality>Irish</nationality>
+      </footballer>
+      <footballer position="forwards">
+        <name>Rodrigo</name>
+        <nationality>Brazilian</nationality>
+      </footballer>
+    </footballers>
+  </team>
+  <team>
+    <name>Real Madrid</name>
+    <city>Madrid</city>
+    <training></training>
+    <footballers>
+      <footballer position="defense">
+        <name>Gareth Bale</name>
+        <nationality>British</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Cristiano Ronaldo</name>
+        <nationality>Portuguese</nationality>
+      </footballer>
+      <footballer position="middle">
+        <name>Casillas</name>
+        <nationality>Spanish</nationality>
+      </footballer>
+      <footballer position="forwards">
+        <name>Ronaldinho</name>
+        <nationality>Brazilian</nationality>
+      </footballer>
+    </footballers>
+  </team>
+</teams>
