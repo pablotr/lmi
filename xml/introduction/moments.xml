@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<moments>
+  <moment description="IBM showed the first PC">
+    <date>
+      <day>12</day>
+      <month>8</month>
+      <year>1981</year>
+    </date>
+  </moment>
+  <moment description="Google foundation">
+    <date>
+      <day>4</day>
+      <month>9</month>
+      <year>1998</year>
+    </date>
+  </moment>
+  <moment description="Facebook foundation">
+    <date>
+      <day>4</day>
+      <month>2</month>
+      <year>2004</year>
+    </date>
+  </moment>
+  <moment description="Camera Café airs for the first time">
+    <date>
+      <day>18</day>
+      <month>9</month>
+      <year>2005</year>
+    </date>
+  </moment>
+  <moment description="Obama enters the White House">
+    <date>
+      <day>20</day>
+      <month>1</month>
+      <year>2009</year>
+    </date>
+  </moment>
+  <moment description="Camera Café airs for the last time">
+    <date>
+      <day>1</day>
+      <month>9</month>
+      <year>2009</year>
+    </date>
+  </moment>
+</moments>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<items>
+  <item>
+    <name>Sofa</name>
+    <price>642</price>
+  </item>
+    <item>
+    <name>Table</name>
+    <price>305</price>
+  </item>
+    <item>
+    <name>Lamp</name>
+    <price>89</price>
+  </item>
+    <item>
+    <name>Croissant</name>
+    <price>1.5</price>
+  </item>
+    <item>
+    <name>Car</name>
+    <price>11200</price>
+  </item>
+    <item>
+    <name>Bicicle</name>
+    <price>140</price>
+  </item>
+</items>
