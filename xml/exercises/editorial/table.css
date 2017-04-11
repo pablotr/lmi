@@ -1,0 +1,52 @@
+table {
+ display: table;
+}
+
+headers {
+ display: table-header-group;
+}
+
+header {
+ padding: 5px;
+ border: solid 1px black;
+ display: table-cell;
+ padding: 5px;
+ border: solid 1px black;
+}
+
+regions {
+ display: table-row-group;
+}
+
+region {
+ display: table-row;
+}
+
+location {
+ padding: 5px;
+ border: solid 1px black;
+ display: table-cell;
+}
+
+trimesters {
+ display: table-cell;
+}
+
+trimester {
+ display: table-row;
+}
+
+sales {
+ display: table-cell;
+}
+
+sale {
+ display: table-row;
+}
+
+data {
+ padding: 5px;
+ border: solid 1px black;
+ display: table-cell;
+ width: 100px;
+}

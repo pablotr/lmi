@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE enrolment [
+<!ELEMENT enrolment (personal , payment)>
+<!ELEMENT personal (dni , name , degree , course , addresses)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT addresses (address)+>
+<!ELEMENT address (a_name)>
+<!ELEMENT a_name (#PCDATA)>
+<!ELEMENT payment (enrolment_type)>
+<!ELEMENT enrolment_type (#PCDATA)>
+<!ATTLIST address type (family | habitual) #REQUIRED>
+]>
+<enrolment>
+  <personal>
+    <dni>99521366M</dni>
+    <name>Maria Garcia Marin</name>
+    <degree>Computing</degree>
+    <course>2016/2017</course>
+    <addresses>
+      <address type="family">
+        <a_name>C/ PioXII nº1</a_name>
+      </address>
+      <address type="habitual">
+        <a_name>C/ Serpis nº2</a_name>
+      </address>
+    </addresses>
+  </personal>
+  <payment>
+    <enrolment_type>Regular</enrolment_type>
+  </payment>
+</enrolment>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inform [
+<!ELEMENT inform (heading,body)>
+<!ELEMENT heading (title,subtitle,description,date)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT body (region+)>
+<!ELEMENT region (sale+)>
+<!ELEMENT sale (sold_books)>
+<!ELEMENT sold_books (#PCDATA)>
+<!ATTLIST region name (north|center|south) #REQUIRED>
+<!ATTLIST sale trimester (1|2|3|4) #REQUIRED>
+]>
+<inform>
+  <heading>
+    <title>Sale Edition</title>
+    <subtitle>Sale Inform</subtitle>
+    <description>sale inform about regions</description>
+    <date>30/12/2016</date>
+  </heading>
+  <body>
+    <region name="north">
+      <sale trimester="1">
+        <sold_books>24000</sold_books>
+      </sale>
+      <sale trimester="2">
+        <sold_books>38600</sold_books>
+      </sale>
+      <sale trimester="3">
+        <sold_books></sold_books>
+      </sale>
+      <sale trimester="4">
+        <sold_books></sold_books>
+      </sale>
+    </region>
+    <region name="center">
+      <sale trimester="1">
+        <sold_books></sold_books>
+      </sale>
+      <sale trimester="2">
+        <sold_books>16080</sold_books>
+      </sale>
+      <sale trimester="3">
+        <sold_books>25000</sold_books>
+      </sale>
+      <sale trimester="4">
+        <sold_books>29000</sold_books>
+      </sale>
+    </region>
+    <region name="south">
+      <sale trimester="1">
+        <sold_books>27000</sold_books>
+      </sale>
+      <sale trimester="2">
+        <sold_books>31400</sold_books>
+      </sale>
+      <sale trimester="3">
+        <sold_books>40100</sold_books>
+      </sale>
+      <sale trimester="4">
+        <sold_books>30000</sold_books>
+      </sale>
+    </region>
+  </body>
+</inform>

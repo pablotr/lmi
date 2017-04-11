@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="table.css"?>
+<inform>
+  <table>
+    <headers>
+      <header>Region</header>
+      <header>Trimester</header>
+      <header>Sold books</header>
+    </headers>
+    <regions>
+      <region>
+        <location>North</location>
+        <trimesters>
+          <trimester><data>1</data></trimester>
+          <trimester><data>2</data></trimester>
+          <trimester><data>3</data></trimester>
+          <trimester><data>4</data></trimester>
+        </trimesters>
+        <sales>
+          <sale><data>43</data></sale>
+          <sale><data>151152</data></sale>
+          <sale><data>nada</data></sale>
+          <sale><data>2</data></sale>
+        </sales>
+      </region>
+    </regions>
+  </table>
+</inform>
